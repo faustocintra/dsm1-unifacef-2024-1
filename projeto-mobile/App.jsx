@@ -1,11 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Card from './src/components/Card';
+import { Image } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Teste</Text>
       <StatusBar style="auto" />
+      <Card title="">
+        <Image source={require("./assets/LOGO_Uni-FACEF.png")} />
+      </Card>
     </View>
   );
 }
@@ -13,7 +17,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ff0000',
+    backgroundColor: '#344f8a',
     alignItems: 'center',
     justifyContent: 'center',
   },
