@@ -1,32 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
+import Card from './src/Card';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Formulário 1</Text>
-      {/* <form>
-        <label>
-          Nome:
-          <input type="text" name="nome" />
-        </label>
-        <input type="submit" value="Enviar" />
-      </form> */}
       <StatusBar style="auto" />
+      <Card title="Uni-FACEF">Centro Universitário Municipal de Franca</Card>
     </View>
   );
 }
 
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#082D0F',
+    backgroundColor: '#dee5e5ff',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  text: {
-    color: '#dee5e5ff',
   },
 });
 
