@@ -1,12 +1,14 @@
 // @ts-nocheck
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+import Card from "./src/Card";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Éder totoso</Text>
+      <Text style={styles.text}>Bem vindo </Text>
       <StatusBar style="auto" />
+      <Card title="Uni-FACEF">Centro Universitário Municipal de Franca</Card>
     </View>
   );
 }
@@ -14,12 +16,12 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#00ffff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#ffffff",
+    alignItems: "center",
+    justifyContent: "center",
   },
   text: {
-    fontWeight: 'bold',
-    fontSize: 20
-  }
+    fontWeight: "bold",
+    fontSize: 20,
+  },
 });
