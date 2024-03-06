@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
     students: {
         borderWidth: 1,
         borderRadius: 16,
-        borderColor: '#ffgggg',
+        borderColor: '#FFA500',
         borderBottomWidth: 0,
         shadowColor: '#000',
         shadowOffset: {width: 0, height: 2},
@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
         marginLeft:5,
         marginRight: 5,
         marginTop:10,
-        backgroundColor: '#87CEFA',
+        backgroundColor: '#FFFF00',
     },
     titleContainer: {
         borderBottomWidth: 1,
@@ -22,16 +22,14 @@ const styles = StyleSheet.create({
         marginBottom: 5,
     },
     name: {
-        fontSize: 30,
-        paddingLeft:5
+        fontSize: 25,
+        paddingLeft:5,
+        fontWeight: 'bold'
     },
-    grade1:{
+    grade:{
         fontSize: 16,
-        paddingLeft:5
-    },
-    grade2:{
-        fontSize: 16,
-        paddingLeft:5
+        paddingLeft:5,
+        color:'#0000FF'
     }
 });
 

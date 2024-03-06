@@ -7,10 +7,11 @@ const Students = ({ name, grade1, grade2 }) => {
 
     return (
         <View style={styles.students}>
-            <Text style={styles.name}>{name}</Text>
-            <Text style={styles.grade}>{grade1}</Text>
-            <Text style={styles.grade}>{grade2}</Text>
-            <Text style={styles.media}>{media}</Text>
+            <Text style={styles.name}>Nome do Aluno: {name}</Text>
+            <View style={styles.titleContainer}></View>
+            <Text style={styles.grade}>Nota 1º Bimestre: {grade1}</Text>
+            <Text style={styles.grade}>Nota 2º Bimestre: {grade2}</Text>
+            <Text style={styles.grade}>Média: {media}</Text>
         </View>
     );
 };
