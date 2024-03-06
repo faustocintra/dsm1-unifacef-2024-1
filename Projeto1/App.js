@@ -1,14 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import Card  from './src/Card';
-import Student from './src/Student';
+import Aluno from './src/Student';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.Text} > Olá, mundo!!</Text>
       <StatusBar style="auto" />
-      <Student title="Uni-FACEF">Centro Universitário Municipal de Franca</Student>
+      <Aluno nomeAluno="Pedro" grade1={8.5} grade2={7.5} />
     </View>
   );
 }
