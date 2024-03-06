@@ -10,9 +10,9 @@ const Student = ({ name, grade1, grade2 }) => {
             <View style={styles.titleContainer}>
             <Text style={styles.name}>{name}</Text>
             </View>
-            <Text style={styles.grade}>{grade1}</Text>
-            <Text style={styles.grade}>{grade2}</Text>
-            <Text style={styles.media}>{media}</Text>
+            <Text style={styles.grade}>Nota 1° Bim: {grade1}</Text>
+            <Text style={styles.grade}>Nota 2° Bim: {grade2}</Text>
+            <Text style={styles.media}>Média: {media}</Text>
         </View>
     );
 };
