@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
         borderRadius: 16,
         borderColor: '#FFA500',
         borderBottomWidth: 0,
+        borderWidth: 3,
         shadowColor: '#000',
         shadowOffset: {width: 0, height: 2},
         shadowOpacity: 0.1,
