@@ -9,6 +9,12 @@ export default function App() {
       <Text style={styles.text}>Bem vindo </Text>
       <StatusBar style="auto" />
       <Card title="Uni-FACEF">Centro Universitário Municipal de Franca</Card>
+      <View style={styles.students}>
+        <Students name="Danilo" grade1={5} grade2={10} />
+        <Students name="Éder" grade1={5} grade2={10} />
+        <Students name="Igor" grade1={5} grade2={10} />
+        <Students name="Breno" grade1={5} grade2={10} />
+      </View>
     </View>
   );
 }
