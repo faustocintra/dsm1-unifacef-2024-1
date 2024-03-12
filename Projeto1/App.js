@@ -6,9 +6,8 @@ import Student from './Student';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Olá, mundo!</Text>
+      <Text style={styles.text}></Text>
       <StatusBar style="auto" />
-      <Card title="Uni-FACEF">Centro Universitário Municipal de Franca</Card>
       <Student name="Enzo" grade1={7} grade2={8} >Centro Universitário Municipal de Franca</Student>
     </View>
   );
