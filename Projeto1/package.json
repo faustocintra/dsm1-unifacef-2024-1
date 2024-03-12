@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@expo/ngrok": "^4.1.0",
-    "expo": "~50.0.8",
+    "expo": "^50.0.11",
     "expo-status-bar": "~1.11.1",
     "react": "18.2.0",
     "react-native": "0.73.4"
