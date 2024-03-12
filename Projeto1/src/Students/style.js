@@ -3,13 +3,11 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   card: {
     width: 400,
-    height: 130,
+    height: 100,
+    alignItems: "center",
     justifyContent: "center",
     backgroundColor: '#445AE3',
-    borderRadius: 20,
-    // position: 'relative',
-    // margin: 'auto',
-    fontFamily: 'inherit',
+    borderRadius: 20
   },
   gradientBackground: {
     flex: 1,
@@ -30,17 +28,7 @@ const styles = StyleSheet.create({
     color: 'white',
     textAlign: 'center',
     fontSize: 20,
-  },
-  jobText: {
-    fontWeight: '400',
-    justifyContent: "space-between",
-    color: 'white',
-    display: 'flex',
-    flex: 1,
-    textAlign: 'center',
-    paddingTop: 5,
-    fontSize: 16,
-  },
+  }
 });
 
 export default styles
