@@ -8,12 +8,12 @@ const Students = ({ name, grade1, grade2 }) => {
 
   return (
     <View style={styles.card}>
-      <Text style={styles.cardText}>Aluno: {name}</Text>
-      <View style={styles.context}>
-        <Text style={styles.cardText} > Nota 1: {grade1}</Text>
-        <Text style={styles.cardText}> Nota 2: {grade2}</Text>
-        <Text style={styles.cardText}> Média: {media}</Text>
+      <View style={styles.titleContainer}>
+        <Text style={styles.title}>{name}</Text>
       </View>
+      <Text style={styles.subTitle}>Nota 1º bim: {grade1}</Text>
+      <Text style={styles.subTitle}>Nota 2º bim: {grade2}</Text>
+      <Text style={styles.subTitle}>Média: {media}</Text>
     </View>
   );
 };

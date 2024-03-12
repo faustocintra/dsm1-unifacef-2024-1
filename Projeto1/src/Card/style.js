@@ -1,32 +1,24 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  container: {
-    paddingHorizontal: 20
-  },
   card: {
     borderRadius: 16,
     borderColor: '#0000FF',
-    borderBottomWidth: 0,
-    shadowColor: '#000',
-    shadowOpacity: 0.1,
-    shadowRadius: 2,
     backgroundColor: '#87CEFA',
+    padding: 10
   },
   titleContainer: {
     borderBottomWidth: 1,
     borderBottomColor: '#000000',
-    // marginBottom: 5,
+    marginBottom: 5
   },
   title: {
     fontSize: 30,
-    paddingLeft: 5
+    fontWeight: 'bold'
   },
   children: {
-    fontSize: 16,
-    paddingLeft: 5
+    fontSize: 16
   }
-
 });
 
 export default styles
