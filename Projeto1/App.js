@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Card from './src/card';
+import Student from './src/student/index'
 
 export default function App() {
   const handlePress = () => {
@@ -14,6 +15,7 @@ export default function App() {
       </TouchableOpacity>
       <StatusBar style="auto" />
       <Card title="Unifacef">Centro universitario</Card>
+      <Student name={Igor} primeiraNota={9} segundaNota={8}/>
     </View>
   );
 }
