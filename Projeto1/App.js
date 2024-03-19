@@ -6,7 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <Student name={"Leandro"} grade1={8} grade2={6}></Student>
+      <Student name={"Leandro"} grade1={8} grade2={6} faltas={21}></Student>
     </View>
   );
 }
