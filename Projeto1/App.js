@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Card from './src/Card';
 import Student from './src/Student'
+import Aluno from './src/Aluno'
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <StatusBar style="auto" />
       <Card title="Uni-FACEF">Centro Universitario Municipal de Franca</Card>
       <Student nome="ROBERTO" nota1={8} nota2={10}></Student>
+      <Aluno nome="ROBERTO" nota1={8} nota2={10} faltas={11} ></Aluno>
     </View>
   );
 }
