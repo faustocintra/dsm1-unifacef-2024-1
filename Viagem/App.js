@@ -1,12 +1,17 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View } from "react-native";
-import Aluno from "./src/Aluno";
+import Viagem from "./src/Viagem";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <Aluno nome="Arthur" nota1={7.5} nota2={8.5}></Aluno>
+      <Viagem
+        viagem="Riberão-Preto"
+        distancia={100}
+        pGasolina={10}
+        pEtanol={7}
+      ></Viagem>
     </View>
   );
 }
