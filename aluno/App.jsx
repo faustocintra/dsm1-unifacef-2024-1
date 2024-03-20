@@ -1,18 +1,18 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-import Card from "./src/components/Card";
-import { Image } from "react-native";
+import { StyleSheet, View } from "react-native";
+import Aluno from "./src/components/Aluno";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <Card 
+      <Aluno
         userName={"Lucas Rodrigues Cintra"} 
         userCode={"24302"}
         grade1={8.5}
         grade2={9.0}
-      />
+        faltas={10}
+      /> 
     </View>
   );
 }
