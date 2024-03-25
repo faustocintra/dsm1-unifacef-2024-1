@@ -1,20 +1,27 @@
 // @ts-nocheck
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-import Card from "./src/Card";
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import Card from './src/card';
+import Student from './src/Student/index'
+import Viagem from './src/Travel/index'
 
 export default function App() {
+  const handlePress = () => {
+    console.log('Botão pressionado!');
+  };
+
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Bem vindo </Text>
+      <TouchableOpacity onPress={handlePress} style={styles.button}>
+        <Text style={styles.text}>Odeio mobile</Text>
+      </TouchableOpacity>
       <StatusBar style="auto" />
-      <Card title="Uni-FACEF">Centro Universitário Municipal de Franca</Card>
-      <View style={styles.students}>
-        <Students name="Danilo" grade1={5} grade2={10} />
-        <Students name="Éder" grade1={5} grade2={10} />
-        <Students name="Igor" grade1={5} grade2={10} />
-        <Students name="Breno" grade1={5} grade2={10} />
-      </View>
+      <Card title="Unifacef">Centro universitario</Card>
+      <Student name={Igor} primeiraNota={9} segundaNota={8} faltas={10}/>
+      <Viagem distancia={100} precoEtanol={4.50} precoGasolina={5.00} />
+      <Viagem distancia={200} precoEtanol={4.60} precoGasolina={5.10} />
+      <Viagem distancia={150} precoEtanol={4.70} precoGasolina={5.20} />
+      <Viagem distancia={180} precoEtanol={4.80} precoGasolina={5.30} />
     </View>
   );
 }
@@ -22,12 +29,16 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#ffffff",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  button: {
+    padding: 10,
+    borderRadius: 5,
   },
   text: {
-    fontWeight: "bold",
-    fontSize: 20,
-  },
+    backgroundColor: 'blue',
+    color: 'white'
+  }
 });

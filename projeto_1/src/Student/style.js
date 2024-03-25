@@ -2,45 +2,25 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   card: {
-    width: 400,
-    height: 130,
-    justifyContent: "center",
-    backgroundColor: '#445AE3',
-    borderRadius: 20,
-    // position: 'relative',
-    // margin: 'auto',
-    fontFamily: 'inherit',
+    borderRadius: 16,
+    borderColor: '#ffa500',
+    borderWidth: 2,
+    borderStyle: "solid",
+    backgroundColor: '#ffffe0',
+    padding: 10
   },
-  gradientBackground: {
-    flex: 1,
-    borderRadius: 10,
-    overflow: 'hidden',
+  titleContainer: {
+    borderBottomWidth: 1,
+    borderBottomColor: '#ffa500',
+    marginBottom: 5
   },
-  cardText: {
-    fontWeight: '600',
-    color: 'white',
-    textAlign: 'center',
-    fontSize: 20,
+  title: {
+    fontSize: 25,
+    fontWeight: 'bold'
   },
-  context: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: 'center',
-    fontWeight: '600',
-    color: 'white',
-    textAlign: 'center',
-    fontSize: 20,
-  },
-  jobText: {
-    fontWeight: '400',
-    justifyContent: "space-between",
-    color: 'white',
-    display: 'flex',
-    flex: 1,
-    textAlign: 'center',
-    paddingTop: 5,
-    fontSize: 16,
-  },
+  subTitle: {
+    fontSize: 20
+  }
 });
 
 export default styles

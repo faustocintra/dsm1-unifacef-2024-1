@@ -1,9 +1,13 @@
+// @ts-nocheck
 import React from 'react';
 import { Text, View } from 'react-native';
 import styles from './style';
 
-const Students = ({ name, grade1, grade2 }) => {
-  const media = (grade1 + grade2) / 2; // Calcula a média corretamente
+const Aluno = ({ name, nota1, nota2, faltas }) => {
+
+  const media = (nota1 + nota2) / 2;
+
+  const status = media >= 6 && faltas < 20 ? 'Aprovado' : 'Reprovado';
 
   return (
     <View style={styles.card}>
@@ -11,12 +15,13 @@ const Students = ({ name, grade1, grade2 }) => {
       </View>
       <Text style={styles.cardText}>Aluno: {name}</Text>
       <View style={styles.context}>
-        <Text style={styles.cardText} > Nota 1: {grade1}</Text>
-        <Text style={styles.cardText}> Nota 2: {grade2}</Text>
-        <Text style={styles.cardText}> Média: {media}</Text>
+        <Text style={styles.cardText}>Primeira Nota: {nota1}</Text>
+        <Text style={styles.cardText}>Segunda Nota: {nota2}</Text>
+        <Text style={styles.cardText}>Quantidade de faltas: {faltas}</Text>
+        <Text style={styles.cardText}>Situação: {status}</Text>
       </View>
     </View>
   );
 };
 
-export default Students;
+export default Aluno;
