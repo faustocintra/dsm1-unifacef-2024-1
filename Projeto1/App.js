@@ -1,20 +1,43 @@
 import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
-
-import styles from './style';
-
-import Students from './src/Students';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import Card from './src/card';
+import Student from './src/student/index'
+import Viagem from './src/viagem/index'
 
 export default function App() {
+  const handlePress = () => {
+    console.log('Botão pressionado!');
+  };
+
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Média dos estudantes do Uni-FACEF</Text>
+      <TouchableOpacity onPress={handlePress} style={styles.button}>
+        <Text style={styles.text}>Odeio mobile</Text>
+      </TouchableOpacity>
       <StatusBar style="auto" />
-      <View style={styles.students}>
-        <Students name="Leandro" grade1={9} grade2={10} />
-        <Students name="Ana" grade1={2} grade2={10} />
-        <Students name="Carlos" grade1={8} grade2={6} />
-      </View>
+      <Card title="Unifacef">Centro universitario</Card>
+      <Student name={Igor} primeiraNota={9} segundaNota={8} faltas={10}/>
+      <Viagem distancia={100} precoEtanol={4.50} precoGasolina={5.00} />
+      <Viagem distancia={200} precoEtanol={4.60} precoGasolina={5.10} />
+      <Viagem distancia={150} precoEtanol={4.70} precoGasolina={5.20} />
+      <Viagem distancia={180} precoEtanol={4.80} precoGasolina={5.30} />
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  button: {
+    padding: 10,
+    borderRadius: 5,
+  },
+  text: {
+    backgroundColor: 'blue',
+    color: 'white'
+  }
+});
