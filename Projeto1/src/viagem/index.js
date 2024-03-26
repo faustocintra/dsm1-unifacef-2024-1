@@ -21,4 +21,4 @@ const Viagem = ({ distancia, precoEtanol, precoGasolina }) => {
   );
 };
 
-export default App;
+export default Viagem;

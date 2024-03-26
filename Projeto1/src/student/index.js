@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import styles from './style';
 
-const Aluno = ({ name, nota1, nota2, faltas }) => {
+const Student = ({ name, nota1, nota2, faltas }) => {
 
   const media = (nota1 + nota2) / 2;
 
@@ -23,4 +23,4 @@ const Aluno = ({ name, nota1, nota2, faltas }) => {
   );
 };
 
-export default Aluno;
+export default Student;
