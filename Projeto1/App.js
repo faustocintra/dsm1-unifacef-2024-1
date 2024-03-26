@@ -12,7 +12,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={handlePress} style={styles.button}>
-        <Text style={styles.text}>Odeio mobile</Text>
+        <Text style={styles.text}>projeto Mobile</Text>
       </TouchableOpacity>
       <StatusBar style="auto" />
       <Card title="Unifacef">Centro universitario</Card>
