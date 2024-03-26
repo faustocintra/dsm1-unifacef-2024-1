@@ -10,6 +10,8 @@ const styles = StyleSheet.create({
     padding: 10
   },
   titleContainer: {
+    flexDirection: "row",
+    justifyContent: 'space-between',
     borderBottomWidth: 1,
     borderBottomColor: '#ffa500',
     marginBottom: 5
@@ -18,8 +20,19 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: 'bold'
   },
+  titleApproved: {
+    fontSize: 25,
+    fontWeight: 'bold',
+    color: "green"
+  },
+  titleReproved: {
+    fontSize: 25,
+    fontWeight: 'bold',
+    color: "red"
+  },
   subTitle: {
-    fontSize: 20
+    fontSize: 20,
+    padding: 2
   }
 });
 
