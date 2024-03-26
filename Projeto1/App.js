@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Card from './src/card';
-import Student from './src/student/index'
+import Aluno from './src/aluno/index'
 import Viagem from './src/viagem/index'
 
 export default function App() {
@@ -16,11 +16,11 @@ export default function App() {
       </TouchableOpacity>
       <StatusBar style="auto" />
       <Card title="Unifacef">Centro universitario</Card>
-      <Student name={Igor} primeiraNota={9} segundaNota={8} faltas={10}/>
-      <Viagem distancia={100} precoEtanol={4.50} precoGasolina={5.00} />
-      <Viagem distancia={200} precoEtanol={4.60} precoGasolina={5.10} />
-      <Viagem distancia={150} precoEtanol={4.70} precoGasolina={5.20} />
-      <Viagem distancia={180} precoEtanol={4.80} precoGasolina={5.30} />
+      <Aluno name={Breno} primeiraNota={8} segundaNota={10} faltas={4}/>
+      <Viagem distancia={150} precoEtanol={4.60} precoGasolina={5.69} />
+      <Viagem distancia={170} precoEtanol={3.90} precoGasolina={5.20} />
+      <Viagem distancia={220} precoEtanol={4.39} precoGasolina={5.49} />
+      <Viagem distancia={100} precoEtanol={4.78} precoGasolina={5.80} />
     </View>
   );
 }
