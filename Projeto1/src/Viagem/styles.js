@@ -6,11 +6,11 @@ const styles = StyleSheet.create({
     border: '2px solid #FF4500',
     padding: 20,
     position: 'absolute',
-    top: 180,
+    top: 380,
     left: 0,
     right: 0,
     zIndex: 10,
-    borderRadius: 20,
+    borderRadius:20,
   },
   title: {
     borderBottomColor: '#000',

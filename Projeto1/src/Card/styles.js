@@ -5,7 +5,13 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     borderColor: '#0000FF',
     backgroundColor: '#87CEFA',
-    padding: 10
+    padding: 20,
+    paddingTop: 20,
+    position: 'absolute',
+    top: 40,
+    left: 0,
+    right: 0,
+    zIndex: 10,
   },
   titleContainer: {
     borderBottomWidth: 1,
