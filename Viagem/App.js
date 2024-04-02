@@ -1,12 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Viagem from './src/viagem';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import Viagem from './src/Viagem'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Viagem destino="São Paulo" distancia={400} etanol={3.47} gasolina={5.07} />
-    </View>
+    <ScrollView>
+      <View style={styles.container}>
+          <Viagem destino="São Paulo" distancia={400} etanol={3.47} gasolina={5.07} />
+          <Viagem destino="Caldas Novas" distancia={640} etanol={3.85} gasolina={4.89} />
+          <Viagem destino="S.J. Rio Preto" distancia={220} etanol={3.32} gasolina={4.98} />
+          <Viagem destino="Batatais" distancia={55} etanol={4.68} gasolina={4.75} />
+          <Viagem destino="Rifaina" distancia={60} etanol={4.10} gasolina={4.88} />
+          <StatusBar style="auto" />
+      </View>
+    </ScrollView>
   );
 }
 
@@ -16,5 +23,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    flexDirection: 'row', // Altere para 'row' para organizar as views horizontalmente
+    flexWrap: 'wrap', // Para que as views quebrem a linha quando necessário
   },
 });
