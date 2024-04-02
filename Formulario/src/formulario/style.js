@@ -1,6 +1,15 @@
-export default function Form({title, text}) {
-    return <View style={styles.container}>
-        <Text style={styles.title}>{title}</Text>
-        <Text style={styles.text}>{text}</Text>
-    </View>
-}
+import { StyleSheet } from 'react-native'
+
+const styles = StyleSheet.create({
+  textInput: {
+    borderColor: '#888',
+    borderWidth: 1
+  },
+  horizontal: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 10
+  }
+})
+
+export default styles
