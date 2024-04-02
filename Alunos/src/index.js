@@ -1,22 +1,19 @@
-import React from 'react';
-import { View, Text } from 'react-native';
-import styles from './style';
+import React from 'react'
+import { View, Text } from 'react-native'
+import styles from './styles'
 
+export default function Aluno({ nome, nota1, nota2, faltas }) {
 
-const Aluno = ({ nome, nota1, nota2, faltas }) => {
-  const media = (nota1 + nota2) / 2;
+  const media = (nota1 + nota2) / 2
 
-  const status = media >= 6 && faltas < 20 ? 'Aprovado' : 'Reprovado';
-
-  return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Nome: {nome}</Text>
-      <Text style={styles.text}>Nota 1: {nota1}</Text>
-      <Text style={styles.text}>Nota 2: {nota2}</Text>
-      <Text style={styles.text}>Faltas: {faltas}</Text>
-      <Text style={[styles.text, status === 'Aprovado' ? styles.aprovado : styles.reprovado]}>Status: {status}</Text>
-    </View>
-  );
-};
-
-export default Aluno;
+  return <View>
+    <Text>Nome: {nome}</Text>
+    <Text>Nota 1: {nota1.toLocaleString('pt-BR',{ minimumFractionalDigits: 1, maximumFractionalDigits: 1 })}</Text>
+    <Text>Nota 2: {nota2.toLocaleString('pt-BR',{ minimumFractionalDigits: 1, maximumFractionalDigits: 1 })}</Text>
+    <Text>Faltas: {faltas}</Text>
+    <Text>Media: {media.toLocaleString('pt-BR',{ minimumFractionalDigits: 1, maximumFractionalDigits: 1 })}</Text>
+    <Text style={media >= 6 && faltas < 20 ? styles.aprovado : styles.reprovado }>
+      Situação: {media >= 6 && faltas < 20 ? 'APROVADO' : 'REPROVADO'}
+    </Text>
+  </View>
+}

@@ -1,27 +1,16 @@
-import React from 'react';
-import { View, Text } from 'react-native';
-import styles from './style';
+import React from 'react'
+import  { View, Text } from 'react-native'
+import styles from './styles'
 
-const Viagem = ({ distancia, precoEtanol, precoGasolina }) => {
-  const consumoEtanol = 9;
-  const consumoGasolina = 11;
-  const litrosEtanol = distancia / consumoEtanol;
-  const litrosGasolina = distancia / consumoGasolina;
-  const valorTotalEtanol = litrosEtanol * precoEtanol;
-  const valorTotalGasolina = litrosGasolina * precoGasolina;
+export default function Viagem({ destino, distancia, etanol, gasolina }) {
 
-  const corComponente = valorTotalEtanol < valorTotalGasolina ? styles.verde : styles.laranja;
+  consumoEtanol = distancia / 9 * etanol
+  consumoGasolina = distancia / 11 * gasolina
 
-  return (
-    <View style={[styles.container, corComponente]}>
-      <Text style={styles.title}>Distância: {distancia} km</Text>
-      <Text style={styles.text}>Preço do Etanol: R$ {precoEtanol.toFixed(2)}</Text>
-      <Text style={styles.text}>Preço da Gasolina: R$ {precoGasolina.toFixed(2)}</Text>
-      <Text style={styles.title}>Valor Gasto:</Text>
-      <Text style={styles.text}>Com Etanol: R$ {valorTotalEtanol.toFixed(2)}</Text>
-      <Text style={styles.text}>Com Gasolina: R$ {valorTotalGasolina.toFixed(2)}</Text>
-    </View>
-  );  
-};
-
-export default Viagem;
+  return <View style={ consumoEtanol < consumoGasolina ? styles.etanol : styles.gasolina }>
+    <Text style={styles.destino}>{destino}</Text>
+    <Text>Distância: {distancia}km</Text>
+    <Text>Preço do etanol: {etanol.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL' }) }</Text>
+    <Text>Preço da gasolina: {gasolina.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL' }) }</Text>
+  </View>
+}

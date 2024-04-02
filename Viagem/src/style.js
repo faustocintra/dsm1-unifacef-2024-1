@@ -1,28 +1,22 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
-  container: {
-    marginBottom: 10,
-    padding: 10,
-    borderWidth: 1,
-    borderRadius: 5,
+  etanol: {
+    padding: 16,
+    borderRadius: 10,
+    backgroundColor: 'lightgreen',
+    marginBottom: 60
   },
-  title: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    marginBottom: 5,
-  },
-  text: {
-    fontSize: 16,
-    marginBottom: 3,
-  },
-  verde: {
-    backgroundColor: 'green',
-  },
-  laranja: {
+  gasolina: {
+    padding: 16,
+    borderRadius: 10,
     backgroundColor: 'orange',
+    marginBottom: 60
   },
-});
+  destino: {
+    fontSize: 24,
+    fontWeight: 'bold'
+  }
+})
 
-  
-export default styles;
+export default styles
