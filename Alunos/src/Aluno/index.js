@@ -23,12 +23,31 @@ const Aluno = ({ nome, nota1, nota2 }) => {
         <Text style={styles.nome}>{nome}</Text>
       </View>
       <View style={styles.horizontal}>
-        <Text>Nota do 1º Bimestre: </Text>
-        <Text>{nota1}</Text>
+        <Text>
+          Nota do 1º Bimestre:
+          {nota1.toLocaleString("pt-BR", {
+            minimumFractionalDigits: 1,
+            maximumFractionalDigits: 1,
+          })}
+        </Text>
       </View>
       <View style={styles.horizontal}>
-        <Text>Nota do 2º Bimestre: </Text>
-        <Text>{nota2}</Text>
+        <Text>
+          Nota do 2º Bimestre:
+          {nota2.toLocaleString("pt-BR", {
+            minimumFractionalDigits: 1,
+            maximumFractionalDigits: 1,
+          })}
+        </Text>
+      </View>
+      <View style={styles.horizontal}>
+        <Text>
+          Media:
+          {media.toLocaleString("pt-BR", {
+            minimumFractionalDigits: 1,
+            maximumFractionalDigits: 1,
+          })}
+        </Text>
       </View>
       <View>
         <Text style={{ color: corStatus }}>{status}</Text>

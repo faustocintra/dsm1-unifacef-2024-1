@@ -1,12 +1,12 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View } from "react-native";
-import Aluno from "./src/Aluno";
+import { StyleSheet, Text, View } from "react-native";
+import Form from "./src/Form";
 
 export default function App() {
   return (
     <View style={styles.container}>
+      <Form />
       <StatusBar style="auto" />
-      <Aluno nome="Arthur" nota1={7.4} nota2={8.3}></Aluno>
     </View>
   );
 }
