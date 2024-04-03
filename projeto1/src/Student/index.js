@@ -1,21 +1,22 @@
-import React from 'react';
-import { Text, View } from 'react-native';
-import styles from './styles';
+import React from 'react'
+import {Text, View} from 'react-native'
+import styles from './styles'
 
-const Student = ({ name, grade1, grade2 }) => {
-    const media = (grade1 + grade2) / 2;
-
-    return (
-        <View style={styles.students}>
-            <View style={styles.titleContainer}>
-            <Text style={styles.name}>{name}</Text>
-            </View>
-            <Text style={styles.grade}>Nota 1° Bim: </Text>
-            <Text >{grade1}</Text>
-            <Text style={styles.grade}>Nota 2° Bim: {grade2}</Text>
-            <Text style={styles.media}>Média: {media}</Text>
-        </View>
-    );
-};
-
-export default Student
+export default function Student({name, grade1, grade2}) {
+  return <View style={styles.card}>
+    <View style={styles.title}>
+      <Text style={styles.titleText}>{name}</Text>
+    </View>
+    <View>
+      <View style={styles.horizontal}>
+        <Text>Nota do 1º bimestre: </Text><Text style={styles.textBlue}>{grade1}</Text>
+      </View>
+      <View style={styles.horizontal}>
+        <Text>Nota do 2º bimestre: </Text><Text style={styles.textBlue}>{grade2}</Text>
+      </View>
+      <View style={styles.horizontal}>
+        <Text>Média: </Text><Text style={styles.textBlue}>{(grade1 + grade2) / 2}</Text>
+      </View>
+    </View>
+  </View>
+}
