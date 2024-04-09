@@ -7,14 +7,16 @@ export default function Form() {
   const [state, setState] = React.useState({
     base: '',
     altura: '',
-    tipo: ''
+    tipo: '',
+    area
   })
   // Criando as variáveis de estado somente-leitura
   // usando desestruturação
   const {
     base,
     altura,
-    tipo
+    tipo,
+    area
   } = state
 
   // Funções de manipulação de eventos usando o formato arrow function
@@ -27,7 +29,20 @@ export default function Form() {
   }
 
   function handleButtonPress() {
-  
+    let result 
+    switch (tipo) {
+      case 'R':
+          result = Number(base) * Number(altura)
+          break
+      case 'T':
+        result = Number(base) * Number(altura) / 2
+      case 'E':
+        result = (Number(base) / 2)  * (Number(altura) / 2) * Math.PI
+        break
+      default:
+        result: '[TIPO INVALIDO]'
+    }
+    setState({...state, area: result})
   }
 
   return (
@@ -38,6 +53,8 @@ export default function Form() {
         <TextInput 
           style={styles.textInput}
           onChangeText={handleBaseChangeText}
+          inputMode='decimal'
+          keyboardType='decimal-pad'
         />
       </View>
       <View style={styles.horizontal}>
@@ -45,6 +62,8 @@ export default function Form() {
         <TextInput 
           style={styles.textInput}
           onChangeText={handleAlturaChangeText}
+          inputMode='decimal'
+          keyboardType='decimal-pad'
         />
       </View>
       <View style={styles.horizontal}>
@@ -52,14 +71,15 @@ export default function Form() {
         <TextInput 
           style={styles.textInput}
           onChangeText={handleTipoChangeText}
+          maxLength={1}
+          autoCapitalize='characters'
         />
       </View>
       <View style={styles.horizontal}>
         <Button title="Calcular" onPress={handleButtonPress} />
       </View>
       <View style={styles.horizontal}>
-        <Text>Área: </Text>
-        <Text>Estado: {JSON.stringify(state)}</Text>
+        <Text>Area: {area}</Text>
       </View>
     </View>
   )
