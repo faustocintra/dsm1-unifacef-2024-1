@@ -1,14 +1,15 @@
-import { StyleSheet} from 'react-native'
-const styles = StyleSheet.create({textInput:{
+import { StyleSheet } from 'react-native'
+
+const styles = StyleSheet.create({
+  textInput: {
     borderColor: '#888',
-    borderWidht: 1
-},
-horizontal:{
+    borderWidth: 1
+  },
+  horizontal: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginBotton: 10
-}
-
+    marginBottom: 30
+  }
 })
 
 export default styles
