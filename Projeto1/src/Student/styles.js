@@ -1,23 +1,26 @@
-import { StyleSheet } from "react-native";
+import {StyleSheet} from 'react-native'
 
 const styles = StyleSheet.create({
-    aluno: {
-        borderRadius: 16,
-        borderColor: '#000000',
-        backgroundColor: '#87CEFA',
-        padding: 10
-    },
-    titleContainer: {
-        borderBottomWidth: 1,
-        borderBottomColor: '#000000'
-    },
-    nome: {
-        fontSize: 30,
-        fontWeigth: 'bold' 
-    },
-    grades: {
-        fontSize: 16
-    }
+  card: {
+    backgroundColor: '#FFFFE0',
+    border: '2px solid #FF4500',
+    padding: 16
+  },
+  title: {
+    borderBottomColor: '#000',
+    borderBottomWidth: 1,
+    marginBottom: 5
+  },
+  titleText: {
+    fontSize: 25,
+    fontWeight: 'bold'
+  },
+  horizontal: {
+    flexDirection: 'row'
+  },
+  textBlue: {
+    color: '#0000CD'
+  }
 })
 
 export default styles
