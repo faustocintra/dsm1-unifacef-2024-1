@@ -11,6 +11,7 @@ export default function Form() {
   })
   // Criando as variáveis de estado somente-leitura
   // usando desestruturação
+
   const {
     base,
     altura,
@@ -27,9 +28,52 @@ export default function Form() {
   }
 
   function handleButtonPress() {
-  
+    let result
+    switch(tipo) {
+      case 'R':       //Retângulo
+        result = (Number(base) * Number(altura)) 
+        break
+      case 'T':        //Triangulo
+        result = (Number(base) * Number(altura)) / 2
+        break
+      case 'E':        //Elipse/circulo
+        result = (Number(base) * Number(altura)) / 2
+        break
+      default:        
+        result = '[TIPO INVALIDO]'
+        break
+    }
+    setState({...state, area: result})
   }
 
+  
+  const handleButtonPress = () => {
+    let result
+    switch(tipo) {
+      case 'R':       //Retângulo
+        result = (Number(base) * Number(altura)) 
+        break
+      case 'T':        //Triangulo
+        result = (Number(base) * Number(altura)) / 2
+        break
+      case 'E':        //Elipse/circulo
+        result = (Number(base) * Number(altura)) / 2
+        break
+      default:        
+        result = '[TIPO INVALIDO]'
+        break
+    }
+    setState({...state, area: result})
+  }
+  /*
+  Propriedaades do textInput
+    inputmode determina o tipo de entrada aceita pelo TextInput
+      (text,decimal,numeric,email,tel,etc. - ver documentacao do reat 
+      Native para ver todos ps valores possiveis)
+    KeyboardType: determina o tipo de teclado que aparecera quando o textInput
+        estiver focado ( default, number-pad, decimal-pad,
+        numeric, etc. - ver documentacao do reat Native para ver todos ps valores possiveis)
+  */
   return (
     <View>
       <Text>Calculadora de área para formas geométricas planas</Text>
@@ -38,6 +82,8 @@ export default function Form() {
         <TextInput 
           style={styles.textInput}
           onChangeText={handleBaseChangeText}
+          inputMode='decimal'
+          keyboardType='decimal-pad'
         />
       </View>
       <View style={styles.horizontal}>
@@ -52,6 +98,8 @@ export default function Form() {
         <TextInput 
           style={styles.textInput}
           onChangeText={handleTipoChangeText}
+          maxLength={1}
+          autoCapitalize='characters'
         />
       </View>
       <View style={styles.horizontal}>
