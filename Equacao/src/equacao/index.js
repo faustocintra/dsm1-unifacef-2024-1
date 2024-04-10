@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, TextInput, Button, Text, StyleSheet } from 'react-native';
+import { View, TextInput, Button, Text } from 'react-native';
 import styles from './styles';
 
 export default function App() {
@@ -7,6 +7,13 @@ export default function App() {
   const [b, setB] = useState('');
   const [c, setC] = useState('');
   const [solution, setSolution] = useState('');
+  
+  const clearValues = () => {
+    setA('');
+    setB('');
+    setC('');
+    setSolution('');
+  };
 
   const solveQuadraticEquation = () => {
     const aNum = parseFloat(a);
@@ -23,10 +30,10 @@ export default function App() {
     if (discriminant > 0) {
       const x1 = (-bNum + Math.sqrt(discriminant)) / (2 * aNum);
       const x2 = (-bNum - Math.sqrt(discriminant)) / (2 * aNum);
-      setSolution(`x1 = ${x1}, x2 = ${x2}`);
+      setSolution(`x1 = ${x1.toFixed(2)}, x2 = ${x2.toFixed(2)}`);
     } else if (discriminant === 0) {
       const x = -bNum / (2 * aNum);
-      setSolution(`x = ${x}`);
+      setSolution(`x = ${x.toFixed(2)}`);
     } else {
       setSolution('Não existem raízes reais');
     }
@@ -34,29 +41,32 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>Insira os coeficientes da equação quadrática:</Text>
+      <Text style={styles.title}>Equação Quadrática</Text>
       <TextInput
         style={styles.input}
         onChangeText={text => setA(text)}
-        placeholder="Insira o coeficiente a"
+        placeholder="Coeficiente a"
         keyboardType="numbers-and-punctuation"
         value={a}
       />
       <TextInput
         style={styles.input}
         onChangeText={text => setB(text)}
-        placeholder="Insira o coeficiente b"
+        placeholder="Coeficiente b"
         keyboardType="numbers-and-punctuation"
         value={b}
       />
       <TextInput
         style={styles.input}
         onChangeText={text => setC(text)}
-        placeholder="Insira o coeficiente c"
+        placeholder="Coeficiente c"
         keyboardType="numbers-and-punctuation"
         value={c}
       />
-      <Button title="Resolver" onPress={solveQuadraticEquation} />
+      <View style={styles.buttonContainer}>
+        <Button title="Limpar" onPress={clearValues} color="#f39c12" />
+        <Button title="Resolver" onPress={solveQuadraticEquation} color="#3498db" />
+      </View>
       <Text style={styles.solution}>{solution}</Text>
     </View>
   );
