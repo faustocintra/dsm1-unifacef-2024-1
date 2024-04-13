@@ -37,8 +37,9 @@ const FormCalculadora = () => {
     // Retornando a interface do componente
     return (
         <View style={styles.container}>
-            <Text style={styles.titulo}>Calculo da formula de Bhaskara</Text>
+            <Text style={styles.titulo}>Calculo da fórmula de Bhaskara</Text>
 
+            {/* Inputs para receber os valores de a, b e c */}
             <TextInput
                 style={styles.input}
                 placeholder="Digite o valor de a:"
@@ -63,8 +64,10 @@ const FormCalculadora = () => {
                 onChangeText={(text) => setC(text)}
             />
 
+            {/* Botão para chamar a função que realiza o calculo de Bhaskara */}
             <Button title="Calcular Raízes" onPress={calcularRaizes} />
 
+            {/* Exibindo o resultado do cálculo */}
             <Text style={styles.resultado}>{resultado}</Text>
         </View>
     )
