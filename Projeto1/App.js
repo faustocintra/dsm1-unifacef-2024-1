@@ -1,33 +1,33 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Card from './src/Card';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+import Card from "./src/Card";
+import Student from "./src/Student";
+import Student2 from "./src/Student2";
+import Alunos from "./src/Alunos";
+import Viagem from "./src/Viagens";
 
 export default function App() {
   return (
     <View style={styles.container}>
-            <Text style={styles.text}>Olá Mundo!</Text>
-            <StatusBar style="auto"/>
-            <Card title="Uni-FACEF">Centro Universitário Municipal de Franca</Card>
-
-            <Student title="Média">
-            <Text>Nota do 1º bimestre: </Text>
-            <Text>Nota do 2º bimestre: </Text>
-            <Text>Média: </Text>
-            </Student>
+      <View style={styles.container}>
+        {/*<Student />*/}
+        {/*<Student2 name='Adalberto Alves' grade={6.5} grade2={7.3} />*/}
+        <Alunos name='Adalberto Alves' grade={6.5} grade2={7.3} faltas={10}/>
+        <Viagem distancia={350} precoEtanol={3.7} precoGasolina={5.1}/>
+      </View>
     </View>
-    
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ffffff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#6096ba",
+    alignItems: "center",
+    justifyContent: "center",
   },
   text: {
-    fontWeight: 'bold',
-    fontSize: 30
-  }
+    fontWeight: "bold",
+    fontSize: 30,
+  },
 });
