@@ -14,6 +14,9 @@ export default function Home({ navigation }) {
         <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("travel")} >
           <Text style={styles.buttonText}>Viagem</Text>
         </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("work")} >
+          <Text style={styles.buttonText}>Trabalho</Text>
+        </TouchableOpacity>
       </View>
     </View>
   )
