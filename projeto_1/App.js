@@ -1,12 +1,12 @@
 // @ts-nocheck
 import React from 'react';
 import { View, StyleSheet, StatusBar } from 'react-native';
-import Equation from './src/Equation/index'; 
+import Cotacao from './src/Cotacao';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Equation />
+      <Cotacao />
       <StatusBar style="auto" />
     </View>
   );
@@ -15,7 +15,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#91abff',
+    backgroundColor: '#85aa82',
     alignItems: 'center',
     justifyContent: 'center',
   },
