@@ -1,11 +1,12 @@
+// Importa os pacotes necessários
 import React from "react";
 import { View, Text, TextInput, Button} from "react-native";
 import { useState } from "react";
 import styles from "./FormStyles";
 
-
-
+// Cria o componente
 const Form = ({}) => {
+  // Cria estados para armazenar valores 
   const [a, setA] = React.useState('');
   const [b, setB] = React.useState('');
   const [c, setC] = React.useState('');
@@ -13,6 +14,7 @@ const Form = ({}) => {
   const [x1, setX1] = useState(null);
   const [x2, setX2] = useState(null);
 
+// Função para calcular o valor de delta e das raízes 
   const calcularDelta = () => {
     const deltaValue = Math.pow(b, 2) - 4 * a * c;
     setDelta(deltaValue);
@@ -27,6 +29,7 @@ const Form = ({}) => {
     }
   };
 
+  // Renderiza as os textos e inputs do formulario
   return (
     <View style={styles.formContainer}>
       <Text>Valor A:</Text>
@@ -51,6 +54,7 @@ const Form = ({}) => {
         onChangeText={text => setC(parseFloat(text))}
       />
       <Button style={styles.btn} title="Calcular" onPress={calcularDelta} />
+      // Mostra o resultado do calculo
       {delta !== null && (
         <Text style={styles.result}>
           Delta: {delta}
@@ -75,4 +79,5 @@ const Form = ({}) => {
   );
 };
 
+// Exporta o componente
 export default Form;

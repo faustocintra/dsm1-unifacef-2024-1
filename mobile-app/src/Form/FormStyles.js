@@ -1,5 +1,7 @@
+// importa o pacode de estilo do react-native
 import { StyleSheet } from "react-native";
 
+// Cria um componente de estilo
 const styles = StyleSheet.create({
   formContainer: {
     flex: 1,
@@ -18,4 +20,5 @@ const styles = StyleSheet.create({
   },
 });
 
+// Exporta o componente de estilo
 export default styles;
