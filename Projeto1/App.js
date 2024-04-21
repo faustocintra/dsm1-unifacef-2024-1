@@ -3,6 +3,8 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Card from './src/card';
 import Aluno from './src/aluno/index'
 import Viagem from './src/viagem/index'
+import bhaskara from './src/bhaskara/index'
+
 
 export default function App() {
   const handlePress = () => {
