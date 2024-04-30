@@ -86,7 +86,7 @@ export default function Bhaskara() {
 
       {/*Visualização dos resultados*/}
       <View>
-        <Text>Delta: {state.delta}</Text>
+        <Text>Delta: {delta}</Text>
         <Text>x1: {x1}</Text>
         <Text>x2: {x2}</Text>
       </View>

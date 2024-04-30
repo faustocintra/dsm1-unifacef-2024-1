@@ -14,7 +14,5 @@ export const styles = StyleSheet.create({
     borderRadius: 5,
     padding: 10,
     marginBottom: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
 });
