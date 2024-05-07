@@ -12,15 +12,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 20,
   },
-  linkButton: {
-    padding: 10,
-    marginBottom: 10,
-    backgroundColor: '#f0f0f0',
-    borderRadius: 5,
-  },
-  linkButtonText: {
-    fontSize: 18,
-    fontWeight: 'bold',
+  buttonContainer: {
+    flexDirection: 'column',
+    gap: 16,
   },
 });
 
