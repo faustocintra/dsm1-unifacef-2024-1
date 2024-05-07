@@ -20,6 +20,7 @@ export default function Cotacao() {
     //Verifico se o valor a dividir nao e 0, para nao dar erro de divisao por 0
     if (destino !== 0) {
       //conta da cotacao e definicao do estado
+
       const cotado = origem / destino;
       setState({
         ...state,
