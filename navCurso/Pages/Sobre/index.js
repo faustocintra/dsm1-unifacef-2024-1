@@ -12,7 +12,7 @@ export default function About({ navigation }) {
         <TouchableHighlight
           style={styles.profileImgContainer}
         >
-          <Image source={{ uri: "https://avatars.githubusercontent.com/EderJrDev" }} style={styles.profileImg} />
+          <Image source={{ uri: "https://avatars.githubusercontent.com/PedroMartiniano" }} style={styles.profileImg} />
         </TouchableHighlight>
 
         <View>
