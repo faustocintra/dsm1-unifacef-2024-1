@@ -25,7 +25,7 @@ export default function Form() {
     const delta = Math.pow(b, 2) - 4 * a * c;
     
     if (delta < 0) {
-      setState({ ...state, raizes: 'As raízes não são reais' }); //caso o valor de delta seja 0, não continua
+      setState({ ...state, raizes: 'As raízes não são reais' });  //caso o valor de delta seja 0, não continua
     } 
     else {
       const x1 = (-b + Math.sqrt(delta)) / (2 * a);
