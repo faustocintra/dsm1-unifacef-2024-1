@@ -26,33 +26,3 @@ export default function App() {
 }
 
 
-/*import { StatusBar } from 'expo-status-bar';
-import { NavigationContainer } from '@react-navigation/native'
-import { createNativeStackNavigator } from '@react-navigation/native-stack'
-
-import MeuApp from './src/MeuApp'
-//import Details from './src/Details'
-
-const Stack = createNativeStackNavigator()
-
-export default function App() {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator
-        screenOptions={{
-          headerStyle: {
-            backgroundColor: '#f4511e',
-          },
-          headerTintColor: '#fff',
-          headerTitleStyle: {
-            fontWeight: 'bold',
-          },
-        }}
-      >
-        <Stack.Screen name="MeuApp" component={MeuApp} />
-      </Stack.Navigator>
-      <StatusBar style="auto" />
-    </NavigationContainer>
-  );
-}
-*/
