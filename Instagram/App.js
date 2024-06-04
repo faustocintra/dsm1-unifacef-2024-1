@@ -1,49 +1,39 @@
-import React, { useState } from 'react';
-import { StyleSheet, TextInput, View, Button, Alert } from 'react-native';
-import  {linearGradient} from 'expo-linear-gradient';
+import {
+  StyleSheet,
+  TextInput,
+  View,
+  StatusBar,
+  Image,
+  Text,
+  TouchableOpacity,
+  Pressable,
+} from "react-native"
+import { NavigationContainer } from "@react-navigation/native"
+import { createNativeStackNavigator } from "@react-navigation/native-stack"
+import Login from "./src/login"
+
+
+
+const Stack = createNativeStackNavigator()
 
 export default function App() {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-
   return (
-    <View style={styles.container}>
-      <TextInput
-        style={styles.input}
-        value={username}
-        placeholder="Nome de usuário"
-      />
-      <TextInput
-        style={styles.input}
-        value={password}
-        placeholder="Senha"
-        secureTextEntry
-      />
-      <Button title="Entrar" />
-    </View>
-  );
+    <NavigationContainer>
+      <Stack.Navigator
+        screenOptions={{
+          headerStyle: {
+            backgroundColor: "#f4511e",
+          },
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            fontWeight: "bold",
+          },
+        }}
+      >
+        <Stack.Screen name="Login" component={Login} />
+        {/* <Stack.Screen name="Tela Inicial" component={TelaInicial} /> */}
+      </Stack.Navigator>
+      <StatusBar style="auto" />
+    </NavigationContainer>
+  )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'orange',
-  },
-  background: {
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    top: 0,
-    height: 300,
-  },
-  input: {
-    height: 40,
-    width: '80%',
-    borderColor: 'gray',
-    borderWidth: 1,
-    marginTop: 20,
-    padding: 10,
-  },
-});
