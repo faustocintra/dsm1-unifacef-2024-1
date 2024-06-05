@@ -6,6 +6,7 @@ import { Image } from "expo-image"
 import { Entypo } from "@expo/vector-icons"
 import { TabActions } from "@react-navigation/native"
 import Storys from "../components/storys"
+import Post from "../components/posts"
 
 export default function TelaInicial({ navigation }) {
   return (
@@ -23,6 +24,7 @@ export default function TelaInicial({ navigation }) {
         </View>
       </View>
       <Storys />
+      <Post />
     </View>
   )
 }
