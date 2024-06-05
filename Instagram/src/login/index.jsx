@@ -17,7 +17,7 @@ export default function Login({ navigation }) {
       <StatusBar backgroundColor={"FFF"} translucent={false} />
       <Text style={styles.language}>Português(Brasil)</Text>
       <Image
-        source={require("../../assets/logo-instagram.png")}
+        source={require("../../assets/logos/logo-instagram.png")}
         style={styles.logo}
       />
       <TextInput
