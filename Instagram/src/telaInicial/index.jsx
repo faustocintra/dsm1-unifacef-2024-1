@@ -1,62 +1,37 @@
 import {
-    StyleSheet,
-    TextInput,
-    View,
-    StatusBar,
-    Image,
-    Text,
-    TouchableOpacity,
-    Pressable,
-} from "./node_modules/react-native";
+  StyleSheet,
+  TextInput,
+  View,
+  StatusBar,
+  Text,
+  TouchableOpacity,
+  Pressable,
+} from "react-native"
+import { Feather } from "@expo/vector-icons"
+import { FontAwesome5 } from "@expo/vector-icons"
+import { styles } from "./style"
+import { Image } from "expo-image"
 
-export default function TelaInicial() {
+export default function TelaInicial({ navigation }) {
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor={"FFF"} translucent={false} />
-      <Text style={styles.language}>Português(Brasil)</Text>
-      <Image
-        source={require("./assets/logo-instagram.png")}
-        style={styles.logo}
-      />
-      <TextInput
-        placeholder="Celular, nome de usuário ou email"
-        style={styles.input}
-      />
-      <TextInput placeholder="Senha" style={styles.input} />
-
-      <Pressable style={styles.buttonEntrar}>
-        <Text style={{ color: "#fff", textAlign: "center", fontWeight: 600 }}>
-          Entrar
-        </Text>
-      </Pressable>
-      <View>
-        <TouchableOpacity>
-          <Text
-            style={{
-              color: "#474747",
-              marginTop: 10,
-              fontWeight: 500,
-            }}
-          >
-            Esqueceu a senha?
-          </Text>
-        </TouchableOpacity>
-      </View>
-      <View style={styles.footer}>
-        <Pressable style={styles.buttonCadastrar}>
-          <Text
-            style={{ color: "#1E90FF", textAlign: "center", fontWeight: 600 }}
-          >
-            Criar nova conta
-          </Text>
-        </Pressable>
-        <View style={styles.meta}>
-          <FontAwesome6 name="meta" size={14} color="grey" />
-          <Text style={{ color: "grey", fontWeight: 600, marginLeft: 5 }}>
-            Meta
-          </Text>
+      <View style={styles.header}>
+        <Image
+          source={require("../../assets/logo-telaInicial.png")}
+          style={styles.logo}
+        />
+        <View style={styles.icons}>
+          <View style={styles.heart}>
+            <Feather name="heart" size={24} color="black" />
+          </View>
+          <View style={styles.messenger}>
+            <FontAwesome5 name="facebook-messenger" size={24} color="black" />
+          </View>
         </View>
       </View>
+      
+      <View></View>
     </View>
   )
 }

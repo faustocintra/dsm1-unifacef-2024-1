@@ -7,8 +7,8 @@ import {
   Text,
   TouchableOpacity,
   Pressable,
-} from "./node_modules/react-native"
-import { FontAwesome6 } from "./node_modules/@expo/vector-icons"
+} from "react-native"
+import { FontAwesome6 } from "@expo/vector-icons"
 import { styles } from "./style"
 
 export default function Login({ navigation }) {
@@ -17,7 +17,7 @@ export default function Login({ navigation }) {
       <StatusBar backgroundColor={"FFF"} translucent={false} />
       <Text style={styles.language}>Português(Brasil)</Text>
       <Image
-        source={require("./assets/logo-instagram.png")}
+        source={require("../../assets/logo-instagram.png")}
         style={styles.logo}
       />
       <TextInput
