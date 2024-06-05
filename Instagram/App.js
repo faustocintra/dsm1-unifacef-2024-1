@@ -24,6 +24,7 @@ const App = () => {
       <Tab.Navigator
       screenOptions={({route}) =>({
         tabBarShowLabel: false,
+        headerShown: false,
         tabBarStyle: {
           height: 50,
         },
@@ -63,7 +64,10 @@ const App = () => {
   }
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false 
+        }}>
         <Stack.Screen name="Bottom" component={bottomTabScreen} />
       </Stack.Navigator>  
     </NavigationContainer>
