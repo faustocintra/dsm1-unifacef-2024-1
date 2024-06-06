@@ -1,6 +1,7 @@
+
 import storys from "../storys"
 
-export default post = [
+export default posts = [
   {
     postTitle: storys[1].name,
     postPersonImage: storys[1].image,
@@ -22,7 +23,7 @@ export default post = [
   {
     postTitle: storys[4].name,
     postPersonImage: storys[4].image,
-    postImage: require("../../../assets/posts/post4.jpg"),
+    postImage: require("../../../assets/posts/post3.jpg"),
     likes: 875,
   },
   {

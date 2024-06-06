@@ -10,15 +10,9 @@ export default Post = () => {
   return (
     <View>
       {posts.map((data) => {
-        // const [like, setLike] = useState(data.isLiked);
+        const [like, setLike] = useState(data.isLiked)
         return (
-          <View
-            style={{
-              paddingBottom: 10,
-              borderBottomColor: "gray",
-              borderBottomWidth: 0.1,
-            }}
-          >
+          <View>
             <View
               style={{
                 flexDirection: "row",
@@ -42,7 +36,7 @@ export default Post = () => {
                 alignItems: "center",
               }}
             >
-              <Image source={data.postImage} style={{ width: "100%", height: 400 }} />
+              <Image source={data.postImage} style={{ width: "100%", height: "65vh" }} />
             </View>
             <View
               style={{
@@ -50,13 +44,13 @@ export default Post = () => {
                 justifyContent: "space-between",
                 alignItems: "center",
                 paddingHorizontal: 12,
-                paddingVertical: 15,
+                paddingVertical: 5,
               }}
             >
               <View style={{ flexDirection: "row", alignItems: "center" }}>
                 <TouchableOpacity>
                   <AntDesign
-                    name={"heart"}
+                    name={"hearto"}
                     style={{
                       paddingRight: 10,
                       fontSize: 20,
@@ -65,7 +59,7 @@ export default Post = () => {
                   />
                 </TouchableOpacity>
                 <TouchableOpacity>
-                  <Ionic name="ios-chatbubble-outline" style={{ fontSize: 20, paddingRight: 10 }} />
+                  <Ionic name="chatbubble-outline" style={{ fontSize: 20, paddingRight: 10 }} />
                 </TouchableOpacity>
                 <TouchableOpacity>
                   <Feather name="navigation" style={{ fontSize: 20 }} />
@@ -74,39 +68,8 @@ export default Post = () => {
               <Feather name="bookmark" style={{ fontSize: 20 }} />
             </View>
             <View style={{ paddingHorizontal: 15 }}>
-              <Text>
-                Liked by {like ? "you and" : ""} {like ? data.likes + 1 : data.likes} others
-              </Text>
-              <Text
-                style={{
-                  fontWeight: "700",
-                  fontSize: 14,
-                  paddingVertical: 2,
-                }}
-              >
-                If enjoy the video ! Please like and Subscribe :)
-              </Text>
+              <Text>Curtido por {data.likes} e outras pessoas</Text>
               <Text style={{ opacity: 0.4, paddingVertical: 2 }}>View all comments</Text>
-              <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-                <View style={{ flexDirection: "row", alignItems: "center" }}>
-                  <Image
-                    source={data.postPersonImage}
-                    style={{
-                      width: 25,
-                      height: 25,
-                      borderRadius: 100,
-                      backgroundColor: "orange",
-                      marginRight: 10,
-                    }}
-                  />
-                  <TextInput placeholder="Add a comment " style={{ opacity: 0.5 }} />
-                </View>
-                <View style={{ flexDirection: "row", alignItems: "center" }}>
-                  <Entypo name="emoji-happy" style={{ fontSize: 15, color: "lightgreen", marginRight: 10 }} />
-                  <Entypo name="emoji-neutral" style={{ fontSize: 15, color: "pink", marginRight: 10 }} />
-                  <Entypo name="emoji-sad" style={{ fontSize: 15, color: "red" }} />
-                </View>
-              </View>
             </View>
           </View>
         )
