@@ -5,9 +5,6 @@ import { Image } from "expo-image"
 import { Entypo } from "@expo/vector-icons"
 import { TabActions } from "@react-navigation/native"
 import { AntDesign } from "@expo/vector-icons"
-// import storys from "../database/storys"
-// import Storys from "../components/storys"
-// import Post from "../components/posts"
 import { header } from "./style"
 
 

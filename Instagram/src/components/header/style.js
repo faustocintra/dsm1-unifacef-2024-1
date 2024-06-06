@@ -1,11 +1,6 @@
 import { StyleSheet } from "react-native"
 
 export const header = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "white",
-    position: "relative",
-  },
   header: {
     width: "98%",
     flexDirection: "row",
