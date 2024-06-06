@@ -1,8 +1,10 @@
-import { Button, Text, View, StyleSheet, TouchableOpacity, TextInput } from "react-native";
+import { Button, Text, View, StyleSheet, TouchableOpacity, TextInput, Image} from "react-native";
+
 
 export default function InstagramLogin({ navigation }) {
   return (
     <View style={styles.container}>
+      <Image source={require("../assets/instagram-logo.png")} style={{width: 200, height: 200, }}/>
       <TextInput style={styles.input}
       placeholder="Nome de usuário, email ou número">
       </TextInput>
