@@ -2,78 +2,100 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    alignContent: 'flex-start',
     flex: 1,
-    alignItems: 'center',
     backgroundColor: '#fff',
-    padding: 20
   },
-  footer: {
-    justifyContent: 'center',
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: '#fff',
-    padding: 20,
-    width: '100%'
+    marginHorizontal: 10,
+    paddingTop: 35
+  },
+  headerRight: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    
   },
   logo: {
     width: 100,
-    height: 100,
-    marginBottom: 40,
-    resizeMode: 'contain',
-  },
-  input: {
-    width: '100%',
     height: 50,
-    borderColor: '#ccc',
-    borderWidth: 1,
-    borderRadius: 5,
-    marginBottom: 20,
-    fontSize: 16,
-    padding: 10
+    objectFit: 'contain'
   },
-  button: {
-    width: '100%',
-    height: 50,
-    backgroundColor: 'blue',
-    justifyContent: 'center',
+  stories: {
+    height: 120,
+    flexDirection: 'row'
+  },
+  storyCirculo: {
+    flex:1,
     alignItems: 'center',
-    borderRadius: 50,
-    marginBottom: 20,
+    marginHorizontal: 5,
+    justifyContent: 'center',
   },
-  buttonText: {
-    color: '#fff',
-    fontSize: 18,
-    fontWeight: 'bold',
+  storyImage: {
+    width: 75,
+    height: 75,
+    borderRadius: 70,
+    borderColor: 'white',
+    borderWidth: 3,
   },
-  forgotPassword: {
-    marginTop: 10,
+  linearGradient: {
+    height: 80,
+    width: 80,
+    borderRadius: 65,
+    marginHorizontal: 4,
   },
-  forgotPasswordText: {
-    color: 'black',
-    fontSize: 14,
-    fontWeight: 'bold'
+  storyText: {
+    marginTop: 7,
+    fontSize: 12,
   },
-  createAccount: {
-    width: '90%',
+  post: {
+    marginVertical: 7,
+  },
+  postHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginHorizontal: 5
+  },
+  postProfileImage: {
+    width: 40,
     height: 40,
-    backgroundColor: 'transparent',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: 50,
-    borderColor: 'blue',
-    borderWidth: 2,
-    marginTop: 90
+    borderRadius: 20,
   },
-  buttonTextCreate: {
-    color: 'blue',
-    fontSize: 14,
+  postUsername: {
+    marginLeft: 10,
     fontWeight: 'bold',
   },
-  metaLogo: {
-    width: 70,
-    height: 70,
-    resizeMode: 'contain',
+  postImage: {
+    width: '100%',
+    height: 435,
   },
+  postDescription: {
+    padding: 10,
+  },
+  iconPost: {
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
+  icon: {
+    marginHorizontal: 15,
+    marginVertical: 5
+  },
+  likePost: {
+    marginHorizontal: 10,
+  },
+  footer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginTop: 20
+  },
+  textBold: {
+    fontWeight: 'bold',
+  },
+  iconBook: {
+    marginLeft: 200
+  }
 });
 
 export default styles;
