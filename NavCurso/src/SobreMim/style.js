@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
   },
   textButton: {
     padding: 20,
-    color: 'mediumblue',
+    color: 'mediumblue', 
     fontSize: '30px'
   },
   titulo: {

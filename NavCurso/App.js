@@ -7,7 +7,7 @@ import SobreMim from './src/SobreMim'
 import Curso from './src/Curso';
 import Instituicao from './src/Instituicao';
 
-const Stack = createNativeStackNavigator()
+const Stack = createNativeStackNavigator() 
 
 export default function App() {
   return (

@@ -14,4 +14,4 @@ export default function SobreMim({ navigation }) {
       </Pressable>
     </View>
   )
-} 
+}  
