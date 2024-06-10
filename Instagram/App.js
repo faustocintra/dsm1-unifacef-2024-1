@@ -12,8 +12,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{
-          headerTransparent: true,
-          headerTitle: '',
+          headerShown: false,
         }}
       >
         <Stack.Screen name="Instagram" component={Login} />
