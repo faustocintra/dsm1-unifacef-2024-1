@@ -5,13 +5,16 @@ import { Text, View, StyleSheet, Image } from "react-native";
 const HomePage = ({ }) => {
   return (
     <View style={styles.container}>
+      {/* Cabeçalho / Notificações / Direct Messenger */}
       <View style={styles.header}>
         <Image source={require("../../assets/instagram-text-icon.png")} style={styles.logoHeader} />
         <View style={styles.headerNav}>
-          <Image source={require("../../assets/notificacao-icone.png")} style={styles.iconMenu} />
+          <Image source={require("../../assets/curtida-icone.png")} style={styles.iconMenu} />
           <Image source={require("../../assets/direct-icone.png")} style={styles.iconMenu} />
         </View>
       </View>
+
+      {/* Story User */}
       <View style={styles.containerStories}>
         <View style={styles.containerStory}>
           <View style={styles.containerStoryAdd}>
@@ -19,7 +22,18 @@ const HomePage = ({ }) => {
           </View>
           <Image source={require("../../assets/user-geraldo.jpg")} style={styles.story} />
           <Text>Seu story</Text>
+        </View>
 
+        {/* Stories geral*/}
+        <View style={styles.containerStory}>
+          <LinearGradient
+            colors={["#F58529", "#DD2A7B", "#8134AF"]}
+            start={{ x: 0, y: 0.8 }}
+            end={{ x: 0.4, y: 0 }}
+            style={styles.gradient}
+          />
+          <Image source={require("../../assets/user-geraldo.jpg")} style={styles.story} />
+          <Text>ritaa_rez</Text>
         </View>
         <View style={styles.containerStory}>
           <LinearGradient
@@ -29,7 +43,7 @@ const HomePage = ({ }) => {
             style={styles.gradient}
           />
           <Image source={require("../../assets/user-geraldo.jpg")} style={styles.story} />
-          <Text>Seu story</Text>
+          <Text>lau_f</Text>
         </View>
         <View style={styles.containerStory}>
           <LinearGradient
@@ -39,17 +53,56 @@ const HomePage = ({ }) => {
             style={styles.gradient}
           />
           <Image source={require("../../assets/user-geraldo.jpg")} style={styles.story} />
-          <Text>Seu story</Text>
+          <Text>limaafe__</Text>
         </View>
-        <View style={styles.containerStory}>
-          <LinearGradient
-            colors={["#F58529", "#DD2A7B", "#8134AF"]}
-            start={{ x: 0, y: 0.8 }}
-            end={{ x: 0.4, y: 0 }}
-            style={styles.gradient}
-          />
-          <Image source={require("../../assets/user-geraldo.jpg")} style={styles.story} />
-          <Text>Seu story</Text>
+      </View>
+
+      {/* Feed */}
+      <View>
+
+        {/* Cabeçalho do Feed */}
+        <View style={styles.containerFeedHeader}>
+          <View style={styles.userContainer}>
+            <Image source={require("../../assets/user-geraldo.jpg")} style={styles.userFeed} />
+            <Text style={styles.userName}>vinicius_cintra__</Text>
+          </View>
+          <Image source={require("../../assets/more.png")} style={styles.more} />
+        </View>
+
+        {/* Imagem do Feed */}
+        <Image source={require("../../assets/user-geraldo.jpg")} style={styles.feed} />
+
+        {/* Rodapé do Feed */}
+        <View style={styles.containerFeedFooter}>
+          <View style={styles.FooterAction}>
+            <Image source={require("../../assets/curtida-icone.png")} style={styles.iconMenu} />
+            <Image source={require("../../assets/comentario.png")} style={styles.iconMenu} />
+            <Image source={require("../../assets/direct.png")} style={styles.iconMenu} />
+          </View>
+          <View style={styles.PostSave}>
+            <Image source={require("../../assets/salvar.png")} style={styles.iconMenu} />
+          </View>
+        </View>
+
+        {/* Informações do Post */}
+        <View style={styles.PostInfo}>
+          <Text style={styles.PostText}>
+            Curtido por <Text style={[styles.userName, styles.PostText]}>ritaa_rez </Text>
+            e <Text style={[styles.userName, styles.PostText]}>outras </Text>
+            pessoas
+          </Text>
+          <Text style={styles.PostText}>
+            <Text style={[styles.userName, styles.PostText]}>vinicius_cintra__</Text>
+            <Text> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </Text>
+          </Text>
+        </View>
+
+        <View style={styles.containerActionBar}>
+          <Image source={require("../../assets/action_home.png")} style={styles.iconMenu} />
+          <Image source={require("../../assets/action_search.png")} style={styles.iconMenu} />
+          <Image source={require("../../assets/action_reels.png")} style={styles.iconMenu} />
+          <Image source={require("../../assets/action_store.png")} style={styles.iconMenu} />
+          <Image source={require("../../assets/user-geraldo.jpg")} style={styles.userFeed} />
         </View>
       </View>
     </View>
@@ -60,7 +113,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
+    gap: 12,
   },
+  // Cabeçalho / Notificações / Direct Messenger
   header: {
     flex: 1,
     flexDirection: "row",
@@ -83,16 +138,16 @@ const styles = StyleSheet.create({
   },
   iconMenu: {
     objectFit: "contain",
-    width: 30,
-    height: 30,
+    width: 24,
+    height: 24,
   },
+  // Stories
   containerStories: {
     height: 102,
     flexDirection: "row",
     alignItems: "center",
     gap: 8,
     paddingLeft: 4,
-    marginTop: 12,
   },
   containerStory: {
     padding: 3.5,
@@ -134,7 +189,71 @@ const styles = StyleSheet.create({
     objectFit: "contain",
     width: 18,
     height: 18,
-  }
+  },
+  // Feed
+  containerFeedHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    gap: 8,
+    padding: 8,
+  },
+  userContainer: {
+    flexDirection: "row",
+    gap: 8,
+    alignItems: "center",
+  },
+  userFeed: {
+    objectFit: "contain",
+    width: 36,
+    height: 36,
+    borderRadius: "100%",
+  },
+  userName: {
+    fontSize: 14,
+    fontWeight: "bold",
+  },
+  more: {
+    objectFit: "contain",
+    width: 28,
+    height: 28,
+  },
+  feed: {
+    width: "100%",
+    height: 400,
+    objectFit: "cover",
+  },
+  containerFeedFooter: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: 8,
+  },
+  FooterAction: {
+    flexDirection: "row",
+    gap: 16
+  },
+  PostSave: {
+    marginRight: 8
+  },
+  PostInfo: {
+    marginTop: 4,
+    paddingHorizontal: 8,
+  },
+  PostText: {
+    fontSize: 16,
+  },
+  // Action Bar
+  containerActionBar: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    marginTop: 28,
+    borderTopWidth: 1,
+    borderTopColor: "#ddd",
+  },
 });
 
 export default HomePage
