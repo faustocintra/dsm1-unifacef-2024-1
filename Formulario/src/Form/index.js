@@ -1,50 +1,44 @@
-import React from 'react'
-import { View, Text, TextInput, Button } from 'react-native'
-import styles from './styles'
+import React from "react";
+import { View, Text, TextInput, Button } from "react-native";
+import styles from "./styles";
 
 export default function Form() {
-
   const [state, setState] = React.useState({
-    base: '',
-    altura: '',
-    tipo: '',
-    area: ''
-  })
+    base: "",
+    altura: "",
+    tipo: "",
+    area: "",
+  });
   // Criando as variáveis de estado somente-leitura
   // usando desestruturação
-  const {
-    base,
-    altura,
-    tipo,
-    area
-  } = state
+  const { base, altura, tipo, area } = state;
 
   // Funções de manipulação de eventos usando o formato arrow function
-  const handleBaseChangeText = text => setState({...state, base: text})
-  const handleAlturaChangeText = text => setState({...state, altura: text})
+  const handleBaseChangeText = (text) => setState({ ...state, base: text });
+  const handleAlturaChangeText = (text) => setState({ ...state, altura: text });
 
   // Função de manipulação de eventos usando o formato tradicional
   function handleTipoChangeText(text) {
-    setState({...state, tipo: text})
+    setState({ ...state, tipo: text });
   }
 
   function handleButtonPress() {
-    let result
-    switch(tipo.toUpperCase()) {
-      case 'R':     // Retângulo
-        result = Number(base) * Number(altura)
-        break
-      case 'T':     // Triângulo
-        result = Number(base) * Number(altura) / 2
-        break
-      case 'E':     // Elipse/círculo
-        result = (Number(base) / 2) * (Number(altura) / 2) * Math.PI
-        break
-      default:      // Forma inválida ou desconhecida
-        result = '[TIPO INVÁLIDO]'
+    let result;
+    switch (tipo.toUpperCase()) {
+      case "R": // Retângulo
+        result = Number(base) * Number(altura);
+        break;
+      case "T": // Triângulo
+        result = (Number(base) * Number(altura)) / 2;
+        break;
+      case "E": // Elipse/círculo
+        result = (Number(base) / 2) * (Number(altura) / 2) * Math.PI;
+        break;
+      default: // Forma inválida ou desconhecida
+        result = "[TIPO INVÁLIDO]";
     }
     // Atualiza o estado da área com o resultado encontrado
-    setState({...state, area: result})
+    setState({ ...state, area: result });
   }
 
   /*
@@ -62,7 +56,7 @@ export default function Form() {
       <Text>Calculadora de área para formas geométricas planas</Text>
       <View style={styles.horizontal}>
         <Text>Base</Text>
-        <TextInput 
+        <TextInput
           style={styles.textInput}
           onChangeText={handleBaseChangeText}
           inputMode="decimal"
@@ -71,7 +65,7 @@ export default function Form() {
       </View>
       <View style={styles.horizontal}>
         <Text>Altura</Text>
-        <TextInput 
+        <TextInput
           style={styles.textInput}
           onChangeText={handleAlturaChangeText}
           inputMode="decimal"
@@ -80,7 +74,7 @@ export default function Form() {
       </View>
       <View style={styles.horizontal}>
         <Text>Tipo (R, T ou E)</Text>
-        <TextInput 
+        <TextInput
           style={styles.textInput}
           onChangeText={handleTipoChangeText}
           maxLength={1}
@@ -94,5 +88,5 @@ export default function Form() {
         <Text>Área: {area}</Text>
       </View>
     </View>
-  )
+  );
 }
