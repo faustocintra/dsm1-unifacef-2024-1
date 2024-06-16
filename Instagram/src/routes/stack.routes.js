@@ -12,8 +12,7 @@ export default function StackRoutes() {
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{
-          headerTransparent: true,
-          headerTitle: "",
+          headerShown: false,
         }}
       >
         <Stack.Screen name="login" component={Login} />

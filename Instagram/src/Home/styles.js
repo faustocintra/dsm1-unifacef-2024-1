@@ -1,0 +1,82 @@
+import { StyleSheet } from "react-native";
+
+export const styles = StyleSheet.create({
+  container: {
+    backgroundColor: "#fff",
+    flex: 1,
+  },
+  header: {
+    flex: 1,
+    flexDirection: "row",
+    marginTop: 44,
+    maxHeight: 56,
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+  },
+  logoHeader: {
+    height: 50,
+    objectFit: "contain",
+    width: 124,
+  },
+  headerNav: {
+    alignItems: "center",
+    flex: 1,
+    flexDirection: "row",
+    gap: 20,
+    justifyContent: "flex-end",
+  },
+  iconMenu: {
+    height: 30,
+    objectFit: "contain",
+    width: 30,
+  },
+  containerStories: {
+    alignItems: "center",
+    flexDirection: "row",
+    gap: 8,
+    height: 102,
+    marginTop: 12,
+    paddingLeft: 4,
+  },
+  containerStory: {
+    alignItems: "center",
+    gap: 5,
+    padding: 3.5,
+  },
+  gradient: {
+    borderRadius: "100%",
+    height: "100%",
+    left: 0,
+    position: "absolute",
+    right: 0,
+  },
+  story: {
+    border: "solid",
+    borderColor: "#fff",
+    borderRadius: "100%",
+    borderWidth: 2,
+    height: 88,
+    objectFit: "contain",
+    width: 88,
+  },
+  containerStoryAdd: {
+    alignItems: "center",
+    backgroundColor: "#111",
+    border: "solid",
+    borderColor: "#fff",
+    borderRadius: "100%",
+    borderWidth: 2,
+    bottom: 24,
+    height: 28,
+    justifyContent: "center",
+    position: "absolute",
+    right: 4,
+    width: 28,
+    zIndex: 1,
+  },
+  storyAdd: {
+    height: 18,
+    objectFit: "contain",
+    width: 18,
+  },
+});
