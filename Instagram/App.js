@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 import homepage from './src/homepage'
-import pages from './src/pages'
+import pages from './src/page'
 
 const Stack = createNativeStackNavigator()
 
@@ -16,7 +16,7 @@ export default function App() {
         }}
       >
         <Stack.Screen name="Instagram" component={homepage} />
-        <Stack.Screen name="Home" component={pages} />
+        <Stack.Screen name="Home" component={page} />
       </Stack.Navigator>
       <StatusBar style="auto" />
     </NavigationContainer>
