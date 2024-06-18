@@ -1,10 +1,12 @@
 import React from "react";
 import { Text, View, Pressable, Image } from "react-native";
 import styles from "./style";
+import Header from "../../Components/header";
 
-const Home = () => {
+const Home = ({ navigation }) => {
   return (
-    <View>
+    <View style={styles.container}>
+      <Header navigation={navigation}/>
       <View></View>
     </View>
   );

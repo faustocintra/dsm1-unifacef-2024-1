@@ -1,4 +1,4 @@
-import { Pressable, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
@@ -76,12 +76,11 @@ const styles = StyleSheet.create({
   },
   flexSeta: {
     marginTop: 30,
-    width: "70%",
+    width: "95%",
   },
   seta: {
     width: 35,
     height: 35,
-    resizeMode: "contain",
   },
 });
 

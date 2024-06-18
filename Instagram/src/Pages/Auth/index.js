@@ -1,15 +1,15 @@
 import React from "react";
 import { Text, View, TextInput, Pressable, Image } from "react-native";
 import styles from "./style";
-import logo from "../../assets/Logo.png";
-import Meta from "../../assets/Meta.png";
-import Seta from "../../assets/Seta.png";
+import logo from "../../../assets/Logo.png";
+import Meta from "../../../assets/Meta.png";
+import Seta from "../../../assets/Seta.png";
 import { LinearGradient } from "expo-linear-gradient";
 
 const Login = ({ navigation }) => {
   return (
     <LinearGradient
-      colors={["#ADD8E6", "#FFFFFF"]}
+      colors={["#FED8B1", "#FFB7B2", "#FDC7E1", "#E2C1F0"]}
       start={{ x: 1, y: 0.5 }}
       end={{ x: 0, y: 0.5 }}
       style={styles.container}
