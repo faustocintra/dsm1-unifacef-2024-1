@@ -9,7 +9,7 @@ export default function App() {
       <Text style={styles.text}>Olá, mundo!</Text>
       <StatusBar style="auto" />
       <Card title="Uni-FACEF">Centro Universitário Municipal de Franca</Card>
-      <Student name="Adalberto Alves" grade1={6.5} grade2={7.3} /> 
+      <Student name="Adalberto Alves" grade1={6.5} grade2={7.3} />
     </View>
   );
 }
