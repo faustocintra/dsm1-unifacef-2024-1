@@ -4,6 +4,7 @@ export const styles = StyleSheet.create({
   container: {
     backgroundColor: "#fff",
     flex: 1,
+    gap: 12,
   },
   header: {
     flex: 1,
@@ -26,57 +27,77 @@ export const styles = StyleSheet.create({
     justifyContent: "flex-end",
   },
   iconMenu: {
-    height: 30,
+    height: 24,
     objectFit: "contain",
-    width: 30,
+    width: 24,
   },
   containerStories: {
     alignItems: "center",
     flexDirection: "row",
     gap: 8,
-    height: 102,
-    marginTop: 12,
+    height: 84,
     paddingLeft: 4,
   },
-  containerStory: {
+  containerFeedHeader: {
+    flexDirection: "row",
     alignItems: "center",
-    gap: 5,
-    padding: 3.5,
+    justifyContent: "space-between",
+    gap: 8,
+    padding: 8,
   },
-  gradient: {
-    borderRadius: "100%",
-    height: "100%",
-    left: 0,
-    position: "absolute",
-    right: 0,
+  userContainer: {
+    flexDirection: "row",
+    gap: 8,
+    alignItems: "center",
   },
-  story: {
-    border: "solid",
-    borderColor: "#fff",
-    borderRadius: "100%",
-    borderWidth: 2,
-    height: 88,
+  userFeed: {
     objectFit: "contain",
-    width: 88,
-  },
-  containerStoryAdd: {
-    alignItems: "center",
-    backgroundColor: "#111",
-    border: "solid",
-    borderColor: "#fff",
+    width: 36,
+    height: 36,
     borderRadius: "100%",
-    borderWidth: 2,
-    bottom: 24,
-    height: 28,
-    justifyContent: "center",
-    position: "absolute",
-    right: 4,
+  },
+  userName: {
+    fontSize: 14,
+    fontWeight: "bold",
+  },
+  more: {
+    objectFit: "contain",
     width: 28,
-    zIndex: 1,
+    height: 28,
   },
-  storyAdd: {
-    height: 18,
-    objectFit: "contain",
-    width: 18,
+  feed: {
+    width: "100%",
+    height: 400,
+    objectFit: "cover",
+  },
+  containerFeedFooter: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: 8,
+  },
+  FooterAction: {
+    flexDirection: "row",
+    gap: 16,
+  },
+  PostSave: {
+    marginRight: 8,
+  },
+  PostInfo: {
+    marginTop: 4,
+    paddingHorizontal: 8,
+  },
+  PostText: {
+    fontSize: 16,
+  },
+  containerActionBar: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    marginTop: 28,
+    borderTopWidth: 1,
+    borderTopColor: "#ddd",
   },
 });

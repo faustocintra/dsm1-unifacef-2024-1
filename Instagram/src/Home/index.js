@@ -1,33 +1,8 @@
 import React from "react";
-import { Text, View, Image } from "react-native";
-import { LinearGradient } from "expo-linear-gradient";
+import { Text, View, Image, ScrollView } from "react-native";
 import { styles } from "./styles";
-
-const Story = ({ isOwnStory, imageSource, gradientColors }) => {
-  const { containerStory, containerStoryAdd, storyAdd, story, gradient } =
-    styles;
-  return (
-    <View style={containerStory}>
-      {isOwnStory ? (
-        <View style={containerStoryAdd}>
-          <Image
-            source={require("../../assets/adicionar.png")}
-            style={storyAdd}
-          />
-        </View>
-      ) : (
-        <LinearGradient
-          colors={gradientColors}
-          start={{ x: 0, y: 0.8 }}
-          end={{ x: 0.4, y: 0 }}
-          style={gradient}
-        />
-      )}
-      <Image source={imageSource} style={story} />
-      <Text>Seu story</Text>
-    </View>
-  );
-};
+import { stories } from "../utils/storyData";
+import Story from "../Components/Story";
 
 const HomePage = () => {
   const {
@@ -37,26 +12,19 @@ const HomePage = () => {
     headerNav,
     iconMenu,
     containerStories,
+    containerFeedHeader,
+    userContainer,
+    userFeed,
+    userName,
+    more,
+    feed,
+    containerFeedFooter,
+    FooterAction,
+    PostSave,
+    PostInfo,
+    PostText,
+    containerActionBar,
   } = styles;
-
-  // Dados dos stories
-  const stories = [
-    {
-      isOwnStory: true,
-      imageSource: require("../../assets/foto-leandro.jpeg"),
-      gradientColors: [],
-    },
-    {
-      isOwnStory: false,
-      imageSource: require("../../assets/corinthians.jpg"),
-      gradientColors: ["#F58529", "#DD2A7B", "#8134AF"],
-    },
-    {
-      isOwnStory: false,
-      imageSource: require("../../assets/corinthians.jpg"),
-      gradientColors: ["#F58529", "#DD2A7B", "#8134AF"],
-    },
-  ];
 
   return (
     <View style={container}>
@@ -80,8 +48,72 @@ const HomePage = () => {
             isOwnStory={story.isOwnStory}
             imageSource={story.imageSource}
             gradientColors={story.gradientColors}
+            userName={story.userName}
           />
         ))}
+      </View>
+      <View>
+        <ScrollView>
+          <View>
+            <View style={containerFeedHeader}>
+              <View style={userContainer}>
+                <Image
+                  source={require("../../assets/foto-leandro.jpeg")}
+                  style={userFeed}
+                />
+                <Text style={userName}>leandro0_vieira</Text>
+              </View>
+              <Image source={require("../../assets/opcoes.png")} style={more} />
+            </View>
+            <Image source={require("../../assets/red_hot.jpeg")} style={feed} />
+            <View style={containerFeedFooter}>
+              <View style={FooterAction}>
+                <Image
+                  source={require("../../assets/like.png")}
+                  style={iconMenu}
+                />
+                <Image
+                  source={require("../../assets/comentario.png")}
+                  style={iconMenu}
+                />
+                <Image
+                  source={require("../../assets/direct.png")}
+                  style={iconMenu}
+                />
+              </View>
+              <View style={PostSave}>
+                <Image
+                  source={require("../../assets/salvar.png")}
+                  style={iconMenu}
+                />
+              </View>
+            </View>
+            <View style={PostInfo}>
+              <Text style={PostText}>
+                Curtido por{" "}
+                <Text style={[userName, PostText]}> chilipeppers </Text>e{" "}
+                <Text style={[userName, PostText]}>outras </Text>
+                pessoas
+              </Text>
+              <Text style={PostText}>
+                <Text style={[userName, PostText]}>leandro0_vieira </Text>
+                <Text>
+                  Red Hot Chili Peppers - 10 de Novembro de 2023 - São Paulo
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </ScrollView>
+        <View style={containerActionBar}>
+          <Image source={require("../../assets/home.png")} style={iconMenu} />
+          <Image source={require("../../assets/buscar.png")} style={iconMenu} />
+          <Image source={require("../../assets/reels.png")} style={iconMenu} />
+          <Image source={require("../../assets/loja.png")} style={iconMenu} />
+          <Image
+            source={require("../../assets/foto-leandro.jpeg")}
+            style={userFeed}
+          />
+        </View>
       </View>
     </View>
   );
