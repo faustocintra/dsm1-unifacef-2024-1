@@ -1,7 +1,7 @@
-import React from "react";
-import { TouchableOpacity, Text, View, TextInput, Image } from "react-native";
-import { LinearGradient } from "expo-linear-gradient";
-import styles from './styles';
+import React from "react"
+import { TouchableOpacity, Text, View, TextInput, Image } from "react-native"
+import { LinearGradient } from "expo-linear-gradient"
+import styles from './styles'
 
 const homepage = ({ navigation }) => {
   return (
@@ -27,7 +27,7 @@ const homepage = ({ navigation }) => {
       </TouchableOpacity>
       <Image source={require("../../assets/logo meta.png")} style={styles.logoMeta} />
     </View>
-  );
+  )
 }
 
 export default homepage;

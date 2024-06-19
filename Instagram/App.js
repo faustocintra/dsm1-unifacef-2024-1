@@ -1,9 +1,9 @@
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'expo-status-bar'
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
-import homepage from './src/homepage';
-import pages from './src/pages';
+import homepage from './src/homepage'
+import pages from './src/pages'
 
 const Stack = createNativeStackNavigator()
 
@@ -20,5 +20,5 @@ export default function App() {
       </Stack.Navigator>
       <StatusBar style="auto" />
     </NavigationContainer>
-  );
+  )
 }
