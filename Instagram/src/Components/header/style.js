@@ -12,6 +12,10 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     gap: 20,
   },
+  titulo: {
+    fontSize: 20,
+    fontWeight: "bold",
+  },
 });
 
 export default styles;

@@ -4,12 +4,12 @@ import styles from "./style";
 import { AntDesign } from "@expo/vector-icons";
 import { FontAwesome5 } from "@expo/vector-icons";
 
-const header = () => {
+const header = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View>
-        <Pressable>
-          <Text style={styles.titulo}>Instragram</Text>
+        <Pressable onPress={() => navigation.navigate("Login")}>
+          <Text style={styles.titulo}>Instagram</Text>
         </Pressable>
       </View>
       <View style={styles.container__icons}>
