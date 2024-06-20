@@ -1,5 +1,5 @@
 import React from "react"
-import { TouchableOpacity, Text, View, TextInput, Image } from "react-native"
+import { TouchableOpacity, Text, View, TextInput } from "react-native"
 import { LinearGradient } from "expo-linear-gradient"
 import styles from './styles'
 
@@ -18,14 +18,16 @@ const homepage = ({ navigation }) => {
       <Image source={require("../../assets/logo_insta.png")} style={styles.logoInstagam} />
       <TextInput style={styles.input} placeholder="Nome de usuário, email ou número" />
       <TextInput style={styles.input} placeholder= "Senha" />
-      <TouchableOpacity style={styles.btnEntrar} onPress={() => navigation.navigate("Home")}>
-        <Text style={styles.btnTextEntrar}>Entrar</Text>
+      <TouchableOpacity style={styles.Entrar} onPress={() => navigation.navigate("Home")}>
+        <Text style={styles.TextEntrar}>Entrar</Text>
       </TouchableOpacity>
       <Text style={styles.senhaAlert}> Esqueceu a senha? </Text>
       <TouchableOpacity style={styles.btnCriarConta} onPress={() => navigation.navigate("CriarConta")}>
         <Text style={styles.btnTextCriarConta}> Criar nova conta </Text>
       </TouchableOpacity>
-      <Image source={require("../../assets/logo_meta.png")} style={styles.logoMeta} />
+
+      {/* <Image source={require("../../assets/logo_meta.png")} style={styles.logoMeta} /> */}
+      <Text style={styles.logoNome}>Stella Barbosa de Souza</Text>
     </View>
   )
 }

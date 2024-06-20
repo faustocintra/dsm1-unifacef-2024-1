@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     borderColor: "#DCE1EB",
     borderWidth: 1.5,
   },
-  btnEntrar: {
+  Entrar: {
     backgroundColor: '#2E82EA',
     padding: 15,
     margin: 10,
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     borderRadius: 30,
     marginBottom: 15,
   },
-  btnTextEntrar: {
+  TextEntrar: {
     color: '#fff',
     fontSize: 20,
     textAlign: "center",
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: "center",
   },
-  logoMeta: {
+  logoNome: {
     width: 120,
     height: 40,
     objectFit: "contain",
