@@ -6,7 +6,6 @@ import styles from './styles';
 const Homepage = ({}) => {
   return (
     <View style={styles.container}>
-      {/* Cabeçalho / Notificações / Direct Messenger */}
       <View style={styles.header}>
         <Image
           source={require("../../assets/instagram-text-icon.png")}
@@ -40,7 +39,6 @@ const Homepage = ({}) => {
           <Text>Seu story</Text>
         </View>
 
-        {/* Stories gerais */}
         <View style={styles.containerStory}>
           <LinearGradient
             colors={["#F58529", "#DD2A7B", "#8134AF"]}
@@ -82,9 +80,7 @@ const Homepage = ({}) => {
         </View>
       </View>
 
-      {/* Feed */}
       <View>
-        {/* Cabeçalho do Feed */}
         <View style={styles.containerFeedHeader}>
           <View style={styles.userContainer}>
             <Image
@@ -99,10 +95,8 @@ const Homepage = ({}) => {
           />
         </View>
 
-        {/* Imagem do Feed */}
         <Image source={require("../../assets/minha-foto.png")} style={styles.feed} />
 
-        {/* Rodapé do Feed */}
         <View style={styles.containerFeedFooter}>
           <View style={styles.FooterAction}>
             <Image
@@ -126,7 +120,6 @@ const Homepage = ({}) => {
           </View>
         </View>
 
-        {/* Informações do Post */}
         <View style={styles.PostInfo}>
           <Text style={styles.PostText}>
             Curtido por{" "}
@@ -148,7 +141,6 @@ const Homepage = ({}) => {
         </View>
       </View>
 
-      {/* Barra de navegação inferior */}
       <View style={styles.containerActionBar}>
         <Image
           source={require("../../assets/action_home.png")}
