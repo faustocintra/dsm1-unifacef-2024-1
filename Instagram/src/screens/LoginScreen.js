@@ -45,7 +45,7 @@ export default function LoginScreen({ navigation }) {
         </View>
 
         <View style={styles.footer}>
-          <Image source={foto2} style={styles.footerImage} />
+        <Text style={styles.footerImage}>Gabriel Paes Leme Costa</Text>
         </View>
       </View>
     </LinearGradient>
