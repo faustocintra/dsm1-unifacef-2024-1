@@ -10,13 +10,13 @@ import { Feather } from '@expo/vector-icons';
 export default function Homepage({navigation}) {
     return (
         <View style={styles.container}>
-            <View style={{flexDirection: 'row', alignItems: 'center', paddingBottom: 2,height: 20}}>
+            <View style={{flexDirection: 'row', alignItems: 'center', paddingBottom: 2,height: 5}}>
                 <Image source={{ uri: 'https://logosmarcas.net/wp-content/uploads/2020/04/Instagram-Logo.png' }} style={styles.instagram}></Image>
-                <AntDesign style={styles.icones} name="hearto" size ={30} color="black"/>    
-                <FontAwesome5 style={styles.icones} name="facebook-messenger" size={24} color="black" />
+                <AntDesign style={styles.icones} name="hearto" size ={20} color="black"/>    
+                <FontAwesome5 style={styles.icones} name="facebook-messenger" size={20} color="black" />
             </View>
             <View style={styles.stories} >
-                    <View style={{ flex: 1, flexDirection: 'column', alignItems: 'center',height: 50 }}>
+                    <View style={{ flex: 1, flexDirection: 'column', alignItems: 'center',height: 20 }}>
                          <Image style={styles.fotos} source={ 'https://st2.depositphotos.com/2931363/6569/i/450/depositphotos_65699901-stock-photo-black-man-keeping-arms-crossed.jpg' } />
                          <Text style={{ textAlign: 'center' }}>Seu story</Text>
                     </View>

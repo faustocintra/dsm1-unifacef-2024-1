@@ -12,8 +12,7 @@ const styles = StyleSheet.create({
     position: 'top-left',
     width: 150,
     height: 90,
-    margin: 10, 
-    marginleft: 200,
+    marginRight: 110, 
     resizeMode: 'contain',
   },
   icones: {
@@ -56,8 +55,8 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'center',
     margin: 2,
-    height: 500,
-    width: 500,
+    height: 550,
+    width: 550,
     padding: 2,
   }
 })
