@@ -3,8 +3,9 @@ import { StyleSheet } from 'react-native'
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundImage: 'linear-gradient(to bottom right, #EBC2FA, #EDF6FA,#D6FADE)',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   texto:{
     padding:10
