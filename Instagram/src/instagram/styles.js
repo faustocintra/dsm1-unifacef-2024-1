@@ -1,15 +1,19 @@
-// styles.js
-
 import { StyleSheet } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#fafafa',
-        backgroundImage: 'linear-gradient(to bottom, #aaaaaa, #ffffff)', // Gradiente de cima para baixo do cinza ao branco
-      },
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  backgroundGradient: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+  },
   language: {
     marginBottom: 60,
   },
@@ -24,8 +28,8 @@ const styles = StyleSheet.create({
   input: {
     width: '100%',
     height: 40,
-    backgroundColor: '#e0e0e0',
-    borderRadius: 5,
+    backgroundColor: '#ffffff',
+    borderRadius: 10,
     paddingHorizontal: 10,
     marginBottom: 10,
   },
@@ -59,9 +63,10 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   createAccountButtonText: {
-    color: '#003569',
+    color: '#3897f0',
     fontWeight: 'bold',
   },
+  
 });
 
 export default styles;
