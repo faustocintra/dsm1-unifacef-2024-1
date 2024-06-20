@@ -14,7 +14,7 @@ const Stories = () => {
     },
     {
       id: 0,
-      name: 'Ram_Charan',
+      name: 'carAwesome',
       image: require('../../../storage/images/profile1.jpg'),
     },
     {
@@ -30,14 +30,14 @@ const Stories = () => {
     ,
     {
       id: 0,
-      name: 'loverland',
-      image: require('../../../storage/images/profile4.jpg'),
+      name: 'bestseafood',
+      image: require('../../../storage/images/profile5.jpg'),
     },
     ,
     {
       id: 0,
       name: 'chillhouse',
-      image: require('../../../storage/images/profile5.jpg'),
+      image: require('../../../storage/images/profile4.jpg'),
     },
   ];
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
 
 import Ionic from 'react-native-vector-icons/Ionicons';
 import { NavigationContainer } from '@react-navigation/native';

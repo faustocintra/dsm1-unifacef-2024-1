@@ -15,26 +15,99 @@ const Post = () => {
       isLiked: false,
     },
     {
-      postTitle: 'chillhouse',
-      postPersonImage: require('../../../storage/images/profile5.jpg'),
+      postTitle: 'okiin',
+      postPersonImage: require('../../../storage/images/userProfile.jpg'),
       postImage: require('../../../storage/images/post2.jpg'),
       likes: 345,
       isLiked: false,
     },
+    //  Tom 
     {
-      postTitle: 'Tom',
-      postPersonImage: require('../../../storage/images/profile4.jpg'),
+      postTitle: 'okiin',
+      postPersonImage: require('../../../storage/images/userProfile.jpg'),
       postImage: require('../../../storage/images/post3.jpg'),
       likes: 734,
       isLiked: false,
     },
     {
-      postTitle: 'The_Grog',
-      postPersonImage: require('../../../storage/images/profile3.jpg'),
+      postTitle: 'bestseafood',
+      postPersonImage: require('../../../storage/images/profile5.jpg'),
       postImage: require('../../../storage/images/post4.jpg'),
       likes: 875,
       isLiked: false,
     },
+    {
+      postTitle: 'The_Grog',
+      postPersonImage: require('../../../storage/images/profile3.jpg'),
+      postImage: require('../../../storage/images/post5.jpg'),
+      likes: 875,
+      isLiked: false,
+    },
+    {
+      postTitle: 'carAwesome',
+      postPersonImage: require('../../../storage/images/profile1.jpg'),
+      postImage: require('../../../storage/images/post7.jpg'),
+      likes: 875,
+      isLiked: false,
+    },
+    {
+      postTitle: 'carAwesome',
+      postPersonImage: require('../../../storage/images/profile1.jpg'),
+      postImage: require('../../../storage/images/post12.jpg'),
+      likes: 875,
+      isLiked: false,
+    },
+    {
+      postTitle: 'chillhouse',
+      postPersonImage: require('../../../storage/images/profile4.jpg'),
+      postImage: require('../../../storage/images/post6.jpg'),
+      likes: 875,
+      isLiked: false,
+    },
+    //tom 6 8 9 10 11
+    {
+      postTitle: 'Tom',
+      postPersonImage: require('../../../storage/images/profile2.jpg'),
+      postImage: require('../../../storage/images/post6.jpg'),
+      likes: 875,
+      isLiked: false,
+    },
+    {
+      postTitle: 'Tom',
+      postPersonImage: require('../../../storage/images/profile2.jpg'),
+      postImage: require('../../../storage/images/post7.jpg'),
+      likes: 875,
+      isLiked: false,
+    },
+    {
+      postTitle: 'Tom',
+      postPersonImage: require('../../../storage/images/profile2.jpg'),
+      postImage: require('../../../storage/images/post8.jpg'),
+      likes: 875,
+      isLiked: false,
+    },
+    {
+      postTitle: 'chillhouse',
+      postPersonImage: require('../../../storage/images/profile4.jpg'),
+      postImage: require('../../../storage/images/post9.jpg'),
+      likes: 875,
+      isLiked: false,
+    },
+    {
+      postTitle: 'Tom',
+      postPersonImage: require('../../../storage/images/profile2.jpg'),
+      postImage: require('../../../storage/images/post10.jpg'),
+      likes: 875,
+      isLiked: false,
+    },
+    {
+      postTitle: 'Tom',
+      postPersonImage: require('../../../storage/images/profile2.jpg'),
+      postImage: require('../../../storage/images/post11.jpg'),
+      likes: 875,
+      isLiked: false,
+    },
+    
   ];
 
   return (
@@ -139,23 +212,11 @@ const Post = () => {
                     }}
                   />
                   <TextInput
-                    placeholder="Add a comment "
+                    placeholder="Adicione um comentario..."
                     style={{opacity: 0.5}}
                   />
                 </View>
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                  <Entypo
-                    name="emoji-happy"
-                    style={{fontSize: 15, color: 'lightgreen', marginRight: 10}}
-                  />
-                  <Entypo
-                    name="emoji-neutral"
-                    style={{fontSize: 15, color: 'pink', marginRight: 10}}
-                  />
-                  <Entypo
-                    name="emoji-sad"
-                    style={{fontSize: 15, color: 'red'}}
-                  />
                 </View>
               </View>
             </View>
