@@ -7,16 +7,28 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  upbar: {
+  instagram: {
     flex: 1,
-    backgroundColor: 'lightgray',
-    alignItems: 'top',
-    justifyContent: 'left',
-    flexDirection: 'row',
+    resizeMode: 'contain',
+    height: 500,
+    width: 100,
+  },
+  iconesSuperiores: {
+    flex: 2,
   },
   text: {
     fontWeight: 'bold',
     fontSize: 30
+  },
+  fotos:{
+    width: 100, 
+    height: 100, 
+    borderRadius: 60,
+    margin: 10, 
+    borderWidth: 5,
+    borderTopColor: '#F514B4',
+    borderColor:'#F57414',
+    borderBottomColor: '#F4B206',
   }
  
 
