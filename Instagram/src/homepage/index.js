@@ -1,6 +1,7 @@
 import React from "react"
 import { TouchableOpacity, Text, View, TextInput } from "react-native"
 import { LinearGradient } from "expo-linear-gradient"
+import { Image } from "react-native";
 import styles from './styles'
 
 const homepage = ({ navigation }) => {
@@ -25,9 +26,8 @@ const homepage = ({ navigation }) => {
       <TouchableOpacity style={styles.btnCriarConta} onPress={() => navigation.navigate("CriarConta")}>
         <Text style={styles.btnTextCriarConta}> Criar nova conta </Text>
       </TouchableOpacity>
-
       {/* <Image source={require("../../assets/logo_meta.png")} style={styles.logoMeta} /> */}
-      <Text style={styles.logoNome}>Stella Barbosa de Souza</Text>
+      <Text> Stella Barbosa de Souza </Text>
     </View>
   )
 }

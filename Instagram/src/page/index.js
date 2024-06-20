@@ -21,7 +21,7 @@ const page = ({ }) => {
           <View style={styles.containerStoryAdd}>
             <Image source={require("../../assets/icone_mais_azul.png")} style={styles.storyAdd} />
           </View>
-          <Image source={require("../../assets/pessoa.jpeg")} style={styles.story} />
+          <Image source={require("../../assets/pessoa.png")} style={styles.story} />
           <Text>Seu story</Text>
         </View>
 
@@ -33,8 +33,8 @@ const page = ({ }) => {
             end={{ x: 0.4, y: 0 }}
             style={styles.gradient}
           />
-          <Image source={require("../../assets/pessoa 2.jpeg")} style={styles.story} />
-          <Text>maria_bs</Text>
+          <Image source={require("../../assets/pessoa.png")} style={styles.story} />
+          <Text>Janaisa</Text>
         </View>
         <View style={styles.containerStory}>
           <LinearGradient
@@ -43,8 +43,8 @@ const page = ({ }) => {
             end={{ x: 0.4, y: 0 }}
             style={styles.gradient}
           />
-          <Image source={require("../../assets/pessoa 3.jpeg")} style={styles.story} />
-          <Text>fk_lua</Text>
+          <Image source={require("../../assets/pessoa.png")} style={styles.story} />
+          <Text>Laysa</Text>
         </View>
         <View style={styles.containerStory}>
           <LinearGradient
@@ -53,8 +53,8 @@ const page = ({ }) => {
             end={{ x: 0.4, y: 0 }}
             style={styles.gradient}
           />
-          <Image source={require("../../assets/pessoa 4.jpeg")} style={styles.story} />
-          <Text>gab_biel</Text>
+          <Image source={require("../../assets/pessoa.png")} style={styles.story} />
+          <Text>Laysa</Text>
         </View>
       </View>
 
@@ -64,14 +64,14 @@ const page = ({ }) => {
       {/* Cabeçalho Feed */}
         <View style={styles.containerFeedHeader}>
           <View style={styles.userContainer}>
-            <Image source={require("../../assets/pessoa.jpeg")} style={styles.userFeed} />
-            <Text style={styles.userName}>stella_souza</Text>
+            <Image source={require("../../assets/pessoa.png")} style={styles.userFeed} />
+            <Text style={styles.userName}> Stella_Souza</Text>
           </View>
           <Image source={require("../../assets/3_pontos.png")} style={styles.more} />
         </View>
 
         {/* Imagem do Feed */}
-        <Image source={require("../../assets/pessoa.jpeg")} style={styles.feed} />
+        <Image source={require("../../assets/pessoa.png")} style={styles.feed} />
 
         {/* Rodapé do Feed */}
         <View style={styles.containerFeedFooter}>
@@ -88,13 +88,13 @@ const page = ({ }) => {
         {/* Post */}
         <View style={styles.PostInfo}>
           <Text style={styles.PostText}>
-            Curtido por <Text style={[styles.userName, styles.PostText]}>maria_bs </Text>
-            e <Text style={[styles.userName, styles.PostText]}>outras </Text>
+            Curtido por <Text style={[styles.userName, styles.PostText]}> Gabriel </Text>
+            e <Text style={[styles.userName, styles.PostText]}> outras </Text>
             pessoas
           </Text>
           <Text style={styles.PostText}>
-            <Text style={[styles.userName, styles.PostText]}>stella_souza</Text>
-            <Text> A felicidade está sempre a um passo de você! </Text>
+            <Text style={[styles.userName, styles.PostText]}> Stella_souza </Text>
+            <Text> Stella </Text>
           </Text>
         </View>
 
@@ -103,7 +103,7 @@ const page = ({ }) => {
           <Image source={require("../../assets/pesquisa.png")} style={styles.iconMenu} />
           <Image source={require("../../assets/reels.png")} style={styles.iconMenu} />
           <Image source={require("../../assets/icone_mais.png")} style={styles.iconMenu} />
-          <Image source={require("../../assets/pessoa.jpeg")} style={styles.userFeed} />
+          <Image source={require("../../assets/pessoa.png")} style={styles.userFeed} />
         </View>
       </View>
     </View>
