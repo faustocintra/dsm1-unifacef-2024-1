@@ -6,27 +6,27 @@ import styles from './styles';
 
 const stories = [
   { id: 1, source: require('./images/story1.jpg'), name: 'Seu Story' },
-  { id: 2, source: require('./images/story2.jpg'), name: 'Carol' },
-  { id: 3, source: require('./images/story3.jpg'), name: 'Mateus' },
-  { id: 4, source: require('./images/story4.jpg'), name: 'Brenda' },
-  { id: 5, source: require('./images/story5.jpg'), name: 'Maria Clara' },
-  { id: 6, source: require('./images/story6.jpg'), name: 'Yuni' },
-  { id: 7, source: require('./images/story7.jpg'), name: 'Julia' },
+  { id: 2, source: require('./images/story2.jpg'), name: 'Chef Paula' },//*
+  { id: 3, source: require('./images/story3.jpg'), name: 'WorkaHolic' },//*
+  { id: 4, source: require('./images/story4.jpg'), name: 'Larissa' },//*
+  { id: 5, source: require('./images/story5.jpg'), name: 'DOGuinho' },//*
+  { id: 6, source: require('./images/story6.jpg'), name: 'Camila' },//*
+  { id: 7, source: require('./images/story7.jpg'), name: 'Beatriz' },//*
 ];
 
 const feed = [
-  { id: 1, source: require('./images/feed1.jpg'), profile: require('./images/story6.jpg'), name: 'Yuni', phrase: 'Apenas vivendo a vida!' },
-  { id: 2, source: require('./images/feed2.jpg'), profile: require('./images/story2.jpg'), name: 'Carol', phrase: 'Um dia ensolarado!' },
-  { id: 3, source: require('./images/feed3.jpg'), profile: require('./images/story3.jpg'), name: 'Mateus', phrase: 'Melhor dia de todos!' },
-  { id: 4, source: require('./images/feed4.jpg'), profile: require('./images/story4.jpg'), name: 'Brenda', phrase: 'Aventuras ao ar livre!' },
+  { id: 1, source: require('./images/feed1.jpg'), profile: require('./images/story6.jpg'), name: 'Camila', phrase: 'Apreciando a beleza da vida!' },//*
+  { id: 2, source: require('./images/feed2.jpg'), profile: require('./images/story2.jpg'), name: 'Chef Paula', phrase: 'Um banquete à mesa!' },//*
+  { id: 3, source: require('./images/feed3.jpg'), profile: require('./images/story3.jpg'), name: 'WorkaHolic', phrase: 'Só um café para acordar!' },//*
+  { id: 4, source: require('./images/feed4.jpg'), profile: require('./images/story4.jpg'), name: 'Larissa', phrase: 'Dança classica!' },//*
 ];
 
 const likes = [
-  { id: 1, profile: require('./images/story2.jpg'), name: 'Carol' },
-  { id: 2, profile: require('./images/story5.jpg'), name: 'Maria Clara' },
-  { id: 3, profile: require('./images/story7.jpg'), name: 'Julia' },
-  { id: 5, profile: require('./images/story3.jpg'), name: 'Mateus' },
-  { id: 6, profile: require('./images/story6.jpg'), name: 'Yuni' },
+  { id: 1, profile: require('./images/story2.jpg'), name: 'Chef Paula' },//*
+  { id: 2, profile: require('./images/story5.jpg'), name: 'DOGuinho' },//*
+  { id: 3, profile: require('./images/story7.jpg'), name: 'Beatriz' },//*
+  { id: 5, profile: require('./images/story3.jpg'), name: 'WorkaHolic' },//*
+  { id: 6, profile: require('./images/story6.jpg'), name: 'Camila' },//*
 ];
 
 const Detalhes = () => {

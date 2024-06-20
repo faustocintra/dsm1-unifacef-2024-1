@@ -45,7 +45,6 @@ const Instagram = () => {
             <Text style={styles.createAccountButtonText}>Criar nova conta</Text>
           </TouchableOpacity>
         </View>
-        <Text style={styles.language}>Leandro Heleno</Text>
       </View>
     </LinearGradient>
   );
