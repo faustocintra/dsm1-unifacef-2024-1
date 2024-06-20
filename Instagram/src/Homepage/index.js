@@ -1,8 +1,7 @@
 import React from "react";
-import {View,Text,Pressable,TextInput,Button} from "react-native";
+import {View,Text} from "react-native";
 import styles from './styles'
 import { Image } from 'react-native'
-import { FontAwesome6 } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
