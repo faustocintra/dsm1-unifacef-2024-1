@@ -57,10 +57,9 @@ const LoginScreen = () => {
         <TouchableOpacity style={styles.link2}>
           <Text style={styles.linkText2}>Criar nova conta</Text>
         </TouchableOpacity>
-        <Image
-          source={require('../assets/meta-removebg-preview.png')}
-          style={styles.logo2}
-        />
+        <TouchableOpacity style={styles.link}>
+          <Text style={styles.boldLinkText}>Icaro Faria de Oliveira</Text>
+        </TouchableOpacity>
       </View>
     </LinearGradient>
   )
