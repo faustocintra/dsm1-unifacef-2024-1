@@ -10,8 +10,8 @@ const App = () => {
   return (
     <NavigationContainer>
       <Nav.Navigator screenOptions={{ headerShown: false }}>
-        <Nav.Screen name="Home" component={Home} />
         <Nav.Screen name="Login" component={Login} />
+        <Nav.Screen name="Home" component={Home} />
       </Nav.Navigator>
     </NavigationContainer>
   );

@@ -53,12 +53,7 @@ const Login = ({ navigation }) => {
         </TouchableOpacity>
       </View>
       <View style={styles.iconContainer}>
-        <Image
-          source={require("../../assets/meta.png")}
-          style={styles.icon}
-          resizeMode="contain"
-        />
-        <Text style={styles.meta}>Meta</Text>
+        <Text style={styles.meta}>Luiz Mario faleiros</Text>
       </View>
     </LinearGradient>
   );
