@@ -15,8 +15,10 @@ const Login = ({ navigation }) => {
       <Image source={require("../../assets/previous-long-arrow.png")} style={styles.arrow} />
       <Text style={styles.linguagem}>Português (Brasil)</Text>
       <Image source={require("../../assets/Instagram-logo.png")} style={styles.logoInstagam} />
-      <TextInput style={styles.input} placeholder="Nome de usuário, email ou número" />
-      <TextInput style={styles.input} placeholder="Senha" />
+      {/* <TextInput style={styles.input} placeholder="Nome de usuário, email ou número" /> */}
+      {/* <TextInput style={styles.input} placeholder="Senha" /> */}
+      <Text style={styles.input}>Nome de usuário, email ou...</Text>
+      <Text style={styles.input}>Senha</Text>
       <TouchableOpacity style={styles.btnEntrar} onPress={() => navigation.navigate("Home")}>
         <Text style={styles.btnTextEntrar}>Entrar</Text>
       </TouchableOpacity>
@@ -61,7 +63,7 @@ const styles = StyleSheet.create({
     width: 90,
     height: 90,
     objectFit: "contain",
-    marginBottom: 90,
+    marginBottom: 80,
   },
   input: {
     backgroundColor: "#F0F0F0",
