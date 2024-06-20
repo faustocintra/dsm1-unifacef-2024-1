@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 import homepage from './src/homepage'
-import pages from './src/page'
+import page from './src/page'
 
 const Stack = createNativeStackNavigator()
 

@@ -15,7 +15,7 @@ const homepage = ({ navigation }) => {
       />
       <Image source={require("../../assets/seta.png")} style={styles.arrow} />
       <Text style={styles.linguagem}> Português (Brasil)</Text>
-      <Image source={require("../../assets/logo insta.png")} style={styles.logoInstagam} />
+      <Image source={require("../../assets/logo_insta.png")} style={styles.logoInstagam} />
       <TextInput style={styles.input} placeholder="Nome de usuário, email ou número" />
       <TextInput style={styles.input} placeholder= "Senha" />
       <TouchableOpacity style={styles.btnEntrar} onPress={() => navigation.navigate("Home")}>
@@ -25,7 +25,7 @@ const homepage = ({ navigation }) => {
       <TouchableOpacity style={styles.btnCriarConta} onPress={() => navigation.navigate("CriarConta")}>
         <Text style={styles.btnTextCriarConta}> Criar nova conta </Text>
       </TouchableOpacity>
-      <Image source={require("../../assets/logo meta.png")} style={styles.logoMeta} />
+      <Image source={require("../../assets/logo_meta.png")} style={styles.logoMeta} />
     </View>
   )
 }
