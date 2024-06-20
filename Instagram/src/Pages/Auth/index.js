@@ -54,8 +54,7 @@ const Login = ({ navigation }) => {
         </Pressable>
       </View>
       <View style={styles.meta}>
-        <Image source={Meta} style={styles.iconMeta} />
-        <Text style={styles.textMeta}>Meta</Text>
+        <Text style={styles.textMeta}>Arthur Saltori Stante</Text>
       </View>
     </LinearGradient>
   );

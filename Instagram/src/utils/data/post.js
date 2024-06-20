@@ -37,7 +37,7 @@ export const POSTS = [
   },
   {
     id: "6",
-    name: 'Pedro"',
+    name: 'Pedro',
     perfil: "https://picsum.photos/500/800",
     post: "https://fastly.picsum.photos/id/60/1920/1200.jpg?hmac=fAMNjl4E_sG_WNUjdU39Kald5QAHQMh-_-TsIbbeDNI",
     descricao: "let's work!",
