@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.11",
+    "expo": "^51.0.14",
     "react-navigation-stack": "^2.10.4"
   }
 }

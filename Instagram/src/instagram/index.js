@@ -1,15 +1,15 @@
-import React from 'react';
-import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
-import { LinearGradient } from 'expo-linear-gradient';
-import styles from './styles';
+import React from 'react'
+import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
+import { LinearGradient } from 'expo-linear-gradient'
+import styles from './styles'
 
 const Instagram = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation()
 
   const handleEntrarPress = () => {
-    navigation.navigate('Feed');
-  };
+    navigation.navigate('Feed')
+  }
 
   return (
     <LinearGradient
@@ -47,7 +47,7 @@ const Instagram = () => {
         </View>
       </View>
     </LinearGradient>
-  );
-};
+  )
+}
 
-export default Instagram;
+export default Instagram
