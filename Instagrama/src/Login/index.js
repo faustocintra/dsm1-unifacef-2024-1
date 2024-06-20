@@ -12,7 +12,6 @@ export default function Login({navigation}) {
     <View style={styles.container}>
       {/*O texto do portugues brasil*/}
       <Text style={{color: "#9AA4B5" }}>Português (Brasil)</Text>
-      
       <Image style={styles.imageLogo} source={ LogoInstagram } />
       {/*Input do email numero ou nome de usuario*/}
       <TextInput
@@ -33,6 +32,7 @@ export default function Login({navigation}) {
       <FontAwesome6 name="meta" size={24} color="black" /> 
       {/*Logo da Meta*/}
       <Text>Meta</Text>
+      <Text style={{color: "#304BE5" }}>Paulo Eduardo Martins Dutra  24009</Text>
     </View>
   );
 }
