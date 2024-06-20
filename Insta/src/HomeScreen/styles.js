@@ -18,8 +18,8 @@ const styles = StyleSheet.create({
     zIndex: 1,
   },
   logoImage: {
-    width: 130,
-    height: 45,
+    width: 60,
+    height: 60,
   },
   iconWrapper: {
     flexDirection: 'row',
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     height: 65,
     borderRadius: 32,
     borderWidth: 3,
-    borderColor: '#d04591',
+    borderColor: 'magenta',
   },
   storyText: {
     marginTop: 6,
@@ -68,10 +68,10 @@ const styles = StyleSheet.create({
   },
   profileName: {
     marginLeft: 4,
-    color: '#fafafa',
-    textShadowColor: '#111',
-    textShadowOffset: { width: -1, height: 1 },
-    textShadowRadius: 8,
+    color: 'magenta',
+    textShadowColor: 'black',
+    textShadowOffset: { width: -2, height: 2 },
+    textShadowRadius: 4,
   },
   feedImage: {
     width: '100%',
@@ -105,8 +105,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#f9f9f9',
   },
   profileThumb: {
-    width: 26,
-    height: 26,
+    width: 30,
+    height: 30,
     borderRadius: 13,
   }
 });

@@ -6,11 +6,13 @@ import { useNavigation } from '@react-navigation/native'
 
 // Local imports
 import styles from './styles'
-import { users, postFeed } from './data'
+
+const data =  require('./data.js')
 
 const HomeScreen = () => {
   const navigation = useNavigation()
 
+  // Função para renderização dos itens da story
   const renderStoryItem = ({ item }) => (
     <TouchableOpacity style={styles.storyItem}>
       <Image source={item.source} style={styles.storyImage} />
@@ -21,26 +23,30 @@ const HomeScreen = () => {
   return (
     <View style={[styles.mainWrapper, { marginTop: 50 }]}>
       <ScrollView style={styles.scrollWrapper}>
+
+        {/* Top Bar, onde fica o icone do instagram e dos chats */}
         <View style={styles.topBar}>
-          <TouchableOpacity onPress={() => navigation.navigate('Instagram')}>
+          <TouchableOpacity onPress={() => navigation.navigate('HomeScreen')}>
             <Image source={require('../assets/logo.png')} style={styles.logoImage} />
           </TouchableOpacity>
           <View style={styles.iconWrapper}>
-            <Ionicons name="heart-outline" size={20} color="black" style={styles.icon} />
-            <Ionicons name="chatbubble-ellipses-outline" size={20} color="black" style={styles.icon} />
+            <Ionicons name="chatbubble-outline" size={30} color="black" style={styles.icon} />
           </View>
         </View>
+
+        {/* Onde são renderizadas as stories, utilizando do import data.js */}
         <FlatList
           horizontal
-          data={users}
+          data={data.users}
           renderItem={renderStoryItem}
           keyExtractor={(item) => item.id.toString()}
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={styles.storyContainer}
         />
-       
+
+        {/* Aqui mapeamos todos os posts do data.js para formarem um layout do post */}
         <View style={styles.feedWrapper}>
-          {postFeed.map((item) => (
+          {data.posts.map((item) => (
             <View key={item.id} style={styles.feedItem}>
               <View style={styles.feedTop}>
                 <Image source={item.profile} style={styles.profileImage} />
@@ -59,11 +65,6 @@ const HomeScreen = () => {
                     size={20} 
                     color="black" 
                     style={styles.icon} />
-                  <Ionicons 
-                    name="paper-plane-outline" 
-                    size={20} 
-                    color="black" 
-                    style={styles.icon} />
                 </View>
                 <Ionicons 
                   name="bookmark-outline" 
@@ -79,30 +80,28 @@ const HomeScreen = () => {
             </View>
           ))}
         </View>
+       
       </ScrollView>
 
+      {/* Aqui ficam os icones na barra abaixo */}
       <View style={styles.bottomNav}>
         <Ionicons 
-          name="home-outline" 
-          size={20} 
+          name="home" 
+          size={30} 
           color="black" 
           style={styles.icon} />
         <Ionicons 
-          name="search-outline" 
-          size={20} 
+          name="search" 
+          size={30} 
           color="black" 
           style={styles.icon} />
         <Ionicons 
-          name="add-circle-outline" 
-          size={20} 
+          name="add-circle" 
+          size={30} 
           color="black" 
           style={styles.icon} />
-        <Ionicons 
-          name="videocam-outline" 
-          size={20} 
-          color="black" 
-          style={styles.icon} />
-        <Image source={require('../assets/story1.jpg')} style={styles.profileThumb} />
+
+        <Image source={require('../assets/pfp1.png')} style={styles.profileThumb} />
       </View>
 
     </View>

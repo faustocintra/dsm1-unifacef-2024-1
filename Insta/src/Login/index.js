@@ -4,12 +4,11 @@ import { Text, View, TextInput, Image, Pressable } from 'react-native'
 
 // Local imports
 import styles from './style'
-import { InstagramLogo } from './assets/logo.png'
 
 export default function LoginScreen({ navigation }) {
   return (
     <View style={styles.wrapper}>
-      <Image style={styles.logo} source={InstagramLogo} />
+    <Image style={styles.logo} source={require('../assets/logo.png')} />
 
       <TextInput
         style={styles.textInput}
@@ -25,8 +24,10 @@ export default function LoginScreen({ navigation }) {
         onPress={() => navigation.navigate('HomeScreen')}
         style={styles.loginButton}
       >
-        <Text style={{ color: "black" }}>Login</Text>
+        <Text style={{ color: "white" }}>-- Login --</Text>
       </Pressable>
+      
+      <Text style={{ color: "black" }}>Yune Uzuki - 23922</Text>
     </View>
   )
 }
