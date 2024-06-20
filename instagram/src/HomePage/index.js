@@ -37,7 +37,7 @@ export default function Homepage({ navigation }) {
 
         <TouchableOpacity
           onPress={() => {
-            /* Adicione aqui a lógica para o botão Esqueceu a senha? */
+            
           }}
         >
           <Text style={styles.forgotPassword}>Esqueceu a senha?</Text>
