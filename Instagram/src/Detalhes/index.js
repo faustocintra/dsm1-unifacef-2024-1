@@ -4,7 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import styles from './styles';
 
-// Dados para histórias
+
 const stories = [
   { id: 1, source: require('./images/story1.jpg'), name: 'Seu Story' },
   { id: 2, source: require('./images/story2.jpg'), name: 'Chef Paula' },
@@ -15,7 +15,7 @@ const stories = [
   { id: 7, source: require('./images/story7.jpg'), name: 'Beatriz' },
 ];
 
-// Dados para o feed
+
 const feed = [
   { id: 1, source: require('./images/feed1.jpg'), profile: require('./images/story6.jpg'), name: 'Camila', phrase: 'Apreciando a beleza da vida!' },
   { id: 2, source: require('./images/feed2.jpg'), profile: require('./images/story2.jpg'), name: 'Chef Paula', phrase: 'Um banquete à mesa!' },
@@ -23,7 +23,7 @@ const feed = [
   { id: 4, source: require('./images/feed4.jpg'), profile: require('./images/story4.jpg'), name: 'Larissa', phrase: 'Dança clássica!' },
 ];
 
-// Dados para os likes
+
 const likes = [
   { id: 1, profile: require('./images/story2.jpg'), name: 'Chef Paula' },
   { id: 2, profile: require('./images/story5.jpg'), name: 'DOGuinho' },
@@ -32,7 +32,7 @@ const likes = [
   { id: 6, profile: require('./images/story6.jpg'), name: 'Camila' },
 ];
 
-// Componente para renderizar uma história individual
+
 const StoryItem = ({ item }) => (
   <TouchableOpacity style={styles.story}>
     <Image source={item.source} style={styles.storyImage} />
@@ -40,7 +40,7 @@ const StoryItem = ({ item }) => (
   </TouchableOpacity>
 );
 
-//  item do feed
+
 const FeedItem = ({ item, index }) => {
   const likeData = likes[index % likes.length];
   return (
@@ -77,7 +77,7 @@ const FeedItem = ({ item, index }) => {
   );
 };
 
-// Componente principal
+
 const Detalhes = () => {
   const navigation = useNavigation();
 
