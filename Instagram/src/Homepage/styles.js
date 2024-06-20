@@ -8,13 +8,16 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   instagram: {
-    flex: 1,
+    position: 'top-left',
+    width: 150,
+    height: 90,
+    margin: 10, 
+    paddingLeft: 20,
     resizeMode: 'contain',
-    height: 500,
-    width: 100,
   },
-  iconesSuperiores: {
-    flex: 2,
+  icones: {
+    padding: 5,
+    marginRight: 5
   },
   text: {
     fontWeight: 'bold',
@@ -29,9 +32,15 @@ const styles = StyleSheet.create({
     borderTopColor: '#F514B4',
     borderColor:'#F57414',
     borderBottomColor: '#F4B206',
+  },
+  fotosFeed:{
+    width: '95%',
+    height: '200px',
+    margin: 10, 
+    paddingLeft: 20,
+    paddingRight: 20,
+    resizeMode: 'contain',
   }
- 
-
 })
 
 export default styles
