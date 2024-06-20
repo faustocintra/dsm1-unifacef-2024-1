@@ -1,5 +1,12 @@
 import React from "react";
-import { TouchableOpacity, Text, View, StyleSheet, TextInput, Image } from "react-native";
+import {
+  TouchableOpacity,
+  Text,
+  View,
+  StyleSheet,
+  TextInput,
+  Image,
+} from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 
 const Login = ({ navigation }) => {
@@ -7,27 +14,42 @@ const Login = ({ navigation }) => {
     <View style={styles.container}>
       <LinearGradient
         colors={["#FFF4DD", "#FFE6DD", "#E1EDFF"]}
-        locations={[0, 0.2, 0.9,]}
+        locations={[0, 0.2, 0.9]}
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 0.2 }}
         style={styles.gradient}
       />
-      <Image source={require("../../assets/previous-long-arrow.png")} style={styles.arrow} />
+      <Image
+        source={require("../../assets/previous-long-arrow.png")}
+        style={styles.arrow}
+      />
       <Text style={styles.linguagem}>Português (Brasil)</Text>
-      <Image source={require("../../assets/Instagram-logo.png")} style={styles.logoInstagam} />
-      <TextInput style={styles.input} placeholder="Nome de usuário, email ou número" />
-      <TextInput style={styles.input} placeholder="Senha" />
-      <TouchableOpacity style={styles.btnEntrar} onPress={() => navigation.navigate("Home")}>
+      <Image
+        source={require("../../assets/Instagram-logo.png")}
+        style={styles.logoInstagam}
+      />
+      <Text
+        style={styles.input}
+        placeholder="Username, email or phone number"
+      />
+      <Text style={styles.input} placeholder="Password" />
+      <TouchableOpacity
+        style={styles.btnEntrar}
+        onPress={() => navigation.navigate("Home")}
+      >
         <Text style={styles.btnTextEntrar}>Entrar</Text>
       </TouchableOpacity>
       <Text style={styles.senhaAlert}>Esqueceu a senha?</Text>
-      <TouchableOpacity style={styles.btnCriarConta} onPress={() => navigation.navigate("CriarConta")}>
+      <TouchableOpacity
+        style={styles.btnCriarConta}
+        onPress={() => navigation.navigate("CriarConta")}
+      >
         <Text style={styles.btnTextCriarConta}>Criar nova conta</Text>
       </TouchableOpacity>
-      <Image source={require("../../assets/Meta-logo-grayscale.png")} style={styles.logoMeta} />
+      <Text>João Paulo Faleiros dos Santos</Text>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -70,11 +92,11 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     fontSize: 20,
     border: "solid",
-    borderColor: "#DCE1EB",
+    borderColor: "#DCE1EE",
     borderWidth: 1.5,
   },
   btnEntrar: {
-    backgroundColor: '#2E82EA',
+    backgroundColor: "#2E82ED",
     padding: 15,
     margin: 10,
     width: "80%",
@@ -82,7 +104,7 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
   btnTextEntrar: {
-    color: '#fff',
+    color: "#ffffff",
     fontSize: 20,
     textAlign: "center",
   },
@@ -95,11 +117,11 @@ const styles = StyleSheet.create({
     borderRadius: 30,
     marginTop: 150,
     border: "solid",
-    borderColor: "#2E82EA",
+    borderColor: "#2E82ED",
     borderWidth: 1.5,
   },
   btnTextCriarConta: {
-    color: '#2E82EA',
+    color: "#2E82ED",
     fontSize: 20,
     textAlign: "center",
   },
@@ -107,7 +129,7 @@ const styles = StyleSheet.create({
     width: 120,
     height: 40,
     objectFit: "contain",
-  }
+  },
 });
 
-export default Login
+export default Login;
