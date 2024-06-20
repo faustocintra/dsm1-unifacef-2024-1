@@ -11,6 +11,7 @@ import Reels from './src/components/telas/Reels';
 import Activity from './src/components/telas/Activity';
 import Profile from './src/components/telas/Profile';
 import Login from './src/components/telas/Login';
+import Status from './src/components/telasComponents/Status';
 
 const App = () => {
   const Stack = createNativeStackNavigator();
@@ -59,6 +60,7 @@ const App = () => {
         }}>
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Bottom" component={bottomTabScreen} />
+        <Stack.Screen name="Status" component={Status} />
       </Stack.Navigator>  
     </NavigationContainer>
   );

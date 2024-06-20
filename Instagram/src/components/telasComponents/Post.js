@@ -3,7 +3,7 @@ import {View, Text, Image, TouchableOpacity, TextInput} from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Ionic from 'react-native-vector-icons/Ionicons';
-import Entypo from 'react-native-vector-icons/Entypo';
+
 
 const Post = () => {
   const postInfo = [
@@ -21,7 +21,6 @@ const Post = () => {
       likes: 345,
       isLiked: false,
     },
-    //  Tom 
     {
       postTitle: 'okiin',
       postPersonImage: require('../../../storage/images/userProfile.jpg'),
@@ -33,78 +32,70 @@ const Post = () => {
       postTitle: 'bestseafood',
       postPersonImage: require('../../../storage/images/profile5.jpg'),
       postImage: require('../../../storage/images/post4.jpg'),
-      likes: 875,
+      likes: 853,
       isLiked: false,
     },
     {
       postTitle: 'The_Grog',
       postPersonImage: require('../../../storage/images/profile3.jpg'),
       postImage: require('../../../storage/images/post5.jpg'),
-      likes: 875,
+      likes: 126,
       isLiked: false,
     },
     {
       postTitle: 'carAwesome',
       postPersonImage: require('../../../storage/images/profile1.jpg'),
       postImage: require('../../../storage/images/post7.jpg'),
-      likes: 875,
+      likes: 165,
       isLiked: false,
     },
     {
       postTitle: 'carAwesome',
       postPersonImage: require('../../../storage/images/profile1.jpg'),
       postImage: require('../../../storage/images/post12.jpg'),
-      likes: 875,
+      likes: 975,
       isLiked: false,
     },
     {
       postTitle: 'chillhouse',
       postPersonImage: require('../../../storage/images/profile4.jpg'),
       postImage: require('../../../storage/images/post6.jpg'),
-      likes: 875,
-      isLiked: false,
-    },
-    //tom 6 8 9 10 11
-    {
-      postTitle: 'Tom',
-      postPersonImage: require('../../../storage/images/profile2.jpg'),
-      postImage: require('../../../storage/images/post6.jpg'),
-      likes: 875,
+      likes: 426,
       isLiked: false,
     },
     {
       postTitle: 'Tom',
       postPersonImage: require('../../../storage/images/profile2.jpg'),
       postImage: require('../../../storage/images/post7.jpg'),
-      likes: 875,
+      likes: 527,
       isLiked: false,
     },
     {
       postTitle: 'Tom',
       postPersonImage: require('../../../storage/images/profile2.jpg'),
       postImage: require('../../../storage/images/post8.jpg'),
-      likes: 875,
+      likes: 642,
       isLiked: false,
     },
     {
       postTitle: 'chillhouse',
       postPersonImage: require('../../../storage/images/profile4.jpg'),
       postImage: require('../../../storage/images/post9.jpg'),
-      likes: 875,
+      likes: 1246,
       isLiked: false,
     },
     {
       postTitle: 'Tom',
       postPersonImage: require('../../../storage/images/profile2.jpg'),
       postImage: require('../../../storage/images/post10.jpg'),
-      likes: 875,
+      likes: 723,
       isLiked: false,
     },
     {
       postTitle: 'Tom',
       postPersonImage: require('../../../storage/images/profile2.jpg'),
       postImage: require('../../../storage/images/post11.jpg'),
-      likes: 875,
+      likes: 164,
       isLiked: false,
     },
     

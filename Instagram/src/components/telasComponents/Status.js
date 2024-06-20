@@ -109,7 +109,7 @@ const Status = ({route, navigation}) => {
       </View>
       <Image
         source={image}
-        style={{position: 'absolute', width: '100%', height: 600}}
+        style={{position: 'absolute', width:'100%', height:'100%'}}
       />
       <View
         style={{
@@ -123,13 +123,13 @@ const Status = ({route, navigation}) => {
           width: '100%',
         }}>
         <TextInput
-          placeholder="send message"
+          placeholder="Enviar Mensagem"
           placeholderTextColor="white"
           style={{
             borderColor: 'white',
             borderRadius: 25,
             width: '85%',
-            height: 50,
+            height: 40,
             paddingLeft: 20,
             borderWidth: 1,
             fontSize: 20,
