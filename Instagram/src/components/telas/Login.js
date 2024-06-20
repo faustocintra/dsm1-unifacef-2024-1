@@ -1,4 +1,3 @@
-// src/components/telas/Login.js
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from 'react-native';
 
@@ -11,9 +10,8 @@ function Login({ navigation }) {
       <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Bottom')}>
         <Text style={styles.buttonText}>Log In</Text>
       </TouchableOpacity>
-      <Text style={styles.orText}>OR</Text>
       <TouchableOpacity>
-        <Text style={styles.facebookText}>Log in with Facebook</Text>
+      <Text style={styles.text}>Nicolas Torres Chiarelo</Text>
       </TouchableOpacity>
       <TouchableOpacity>
         <Text style={styles.forgotPasswordText}>Forgot password?</Text>
@@ -72,6 +70,13 @@ const styles = StyleSheet.create({
   forgotPasswordText: {
     color: '#385185',
     fontSize: 12,
+  },
+  text: {
+    color: '#8e8e8e', 
+    fontFamily: 'Lobster-Regular',
+    fontSize: 15,
+    marginTop: 20,
+
   },
 });
 
