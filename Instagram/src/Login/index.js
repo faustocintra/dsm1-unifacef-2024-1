@@ -26,13 +26,12 @@ const Login = ({ navigation }) => {
     passwordAlert,
     btnCreateAccount,
     btnTextCreateAccount,
-    logoMeta,
   } = styles;
 
   return (
     <View style={container}>
       <LinearGradient
-        colors={["#FFF4DD", "#FFE6DD", "#E1EDFF"]}
+        colors={["#FFF4ED", "#FFE4DD", "#E1EDFE"]}
         locations={[0, 0.2, 0.9]}
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 0.2 }}
@@ -64,7 +63,9 @@ const Login = ({ navigation }) => {
       >
         <Text style={btnTextCreateAccount}>Criar nova conta</Text>
       </TouchableOpacity>
-      <Image source={require("../../assets/meta-logo.png")} style={logoMeta} />
+      <Text style={{ fontWeight: "bold", fontSize: 18, marginBottom: 15 }}>
+        Leandro Andrade Vieira - 24003
+      </Text>
     </View>
   );
 };

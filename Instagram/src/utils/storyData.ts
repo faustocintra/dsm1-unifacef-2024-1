@@ -1,3 +1,4 @@
+//Dados dos stories
 export const stories = [
   {
     isOwnStory: true,

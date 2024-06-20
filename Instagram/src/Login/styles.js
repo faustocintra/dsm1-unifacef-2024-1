@@ -17,6 +17,7 @@ export const styles = StyleSheet.create({
     border: "solid",
     borderColor: "#2E82EA",
     borderWidth: 1.5,
+    marginBottom: 15,
   },
   btnLogin: {
     backgroundColor: "#2E82EA",
@@ -70,11 +71,6 @@ export const styles = StyleSheet.create({
     height: 90,
     objectFit: "contain",
     marginBottom: 90,
-  },
-  logoMeta: {
-    width: 120,
-    height: 40,
-    objectFit: "contain",
   },
   passwordAlert: {
     fontSize: 18,
