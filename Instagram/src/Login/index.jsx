@@ -1,33 +1,48 @@
 import React from "react";
-import { TouchableOpacity, Text, View, StyleSheet, TextInput, Image } from "react-native";
+import {
+  TouchableOpacity,
+  Text,
+  View,
+  StyleSheet,
+  TextInput,
+  Image,
+} from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 
 const Login = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <LinearGradient
-        colors={["#FFF4ff", "#FFE6DD", "#E1EDFF"]}
-        locations={[0, 0.2, 0.9,]}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 0.2 }}
-        style={styles.gradient}
+      <Image
+        source={require("../../assets/previous-long-arrow.png")}
+        style={styles.arrow}
       />
-      <Image source={require("../../assets/previous-long-arrow.png")} style={styles.arrow} />
       <Text style={styles.linguagem}>Português (Brasil)</Text>
-      <Image source={require("../../assets/Instagram-logo.png")} style={styles.logoInstagam} />
-      <TextInput style={styles.input} placeholder="Nome de usuário, email ou número" />
+      <Image
+        source={require("../../assets/Instagram-logo.png")}
+        style={styles.logoInstagam}
+      />
+      <TextInput
+        style={styles.input}
+        placeholder="Nome de usuário, email ou número"
+      />
       <TextInput style={styles.input} placeholder="Senha" />
-      <TouchableOpacity style={styles.btnEntrar} onPress={() => navigation.navigate("Home")}>
+      <TouchableOpacity
+        style={styles.btnEntrar}
+        onPress={() => navigation.navigate("Home")}
+      >
         <Text style={styles.btnTextEntrar}>Entrar</Text>
       </TouchableOpacity>
       <Text style={styles.senhaAlert}>Esqueceu a senha?</Text>
-      <TouchableOpacity style={styles.btnCriarConta} onPress={() => navigation.navigate("CriarConta")}>
+      <TouchableOpacity
+        style={styles.btnCriarConta}
+        onPress={() => navigation.navigate("CriarConta")}
+      >
         <Text style={styles.btnTextCriarConta}>Criar nova conta</Text>
       </TouchableOpacity>
-      <Image source={require("../../assets/Meta-logo-grayscale.png")} style={styles.logoMeta} />
+      <Text> TANIA MARAIZA DE SOUZA CAMPOS </Text>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -70,11 +85,11 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     fontSize: 20,
     border: "solid",
-    borderColor: "#DCE1EB",
+    borderColor: "#ddd",
     borderWidth: 1.5,
   },
   btnEntrar: {
-    backgroundColor: '#2E82EA',
+    backgroundColor: "#2E82EA",
     padding: 15,
     margin: 10,
     width: "80%",
@@ -82,7 +97,7 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
   btnTextEntrar: {
-    color: '#fff',
+    color: "#fff",
     fontSize: 20,
     textAlign: "center",
   },
@@ -99,7 +114,7 @@ const styles = StyleSheet.create({
     borderWidth: 1.5,
   },
   btnTextCriarConta: {
-    color: '#2E82EA',
+    color: "#2E82EA",
     fontSize: 20,
     textAlign: "center",
   },
@@ -107,7 +122,7 @@ const styles = StyleSheet.create({
     width: 120,
     height: 40,
     objectFit: "contain",
-  }
+  },
 });
 
-export default Login
+export default Login;

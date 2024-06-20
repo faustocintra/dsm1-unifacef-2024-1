@@ -13,7 +13,7 @@ const HomePage = ({}) => {
         />
         <View style={styles.headerNav}>
           <Image
-            source={require("../../assets/curtida-icone.png")}
+            source={require("../../assets/notificacao-icone.png")}
             style={styles.iconMenu}
           />
           <Image
@@ -41,12 +41,6 @@ const HomePage = ({}) => {
 
         {/* Stories geral*/}
         <View style={styles.containerStory}>
-          <LinearGradient
-            colors={["#F58529", "#DD2A7B", "#8134AF"]}
-            start={{ x: 0, y: 0.8 }}
-            end={{ x: 0.4, y: 0 }}
-            style={styles.gradient}
-          />
           <Image
             source={require("../../assets/eu.jpeg")}
             style={styles.story}
@@ -54,12 +48,6 @@ const HomePage = ({}) => {
           <Text>Hyan_kelwvin</Text>
         </View>
         <View style={styles.containerStory}>
-          <LinearGradient
-            colors={["#F58529", "#DD2A7B", "#8134AF"]}
-            start={{ x: 0, y: 0.8 }}
-            end={{ x: 0.4, y: 0 }}
-            style={styles.gradient}
-          />
           <Image
             source={require("../../assets/eu.jpeg")}
             style={styles.story}
@@ -67,12 +55,6 @@ const HomePage = ({}) => {
           <Text>wainner_jr</Text>
         </View>
         <View style={styles.containerStory}>
-          <LinearGradient
-            colors={["#F58529", "#DD2A7B", "#8134AF"]}
-            start={{ x: 0, y: 0.8 }}
-            end={{ x: 0.4, y: 0 }}
-            style={styles.gradient}
-          />
           <Image
             source={require("../../assets/eu.jpeg")}
             style={styles.story}
@@ -105,7 +87,7 @@ const HomePage = ({}) => {
         <View style={styles.containerFeedFooter}>
           <View style={styles.FooterAction}>
             <Image
-              source={require("../../assets/curtida-icone.png")}
+              source={require("../../assets/notificacao-icone.png")}
               style={styles.iconMenu}
             />
             <Image
