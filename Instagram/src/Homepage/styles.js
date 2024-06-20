@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native'
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: 'lightgray',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     width: 150,
     height: 90,
     margin: 10, 
-    paddingLeft: 20,
+    marginleft: 200,
     resizeMode: 'contain',
   },
   icones: {
@@ -34,12 +34,21 @@ const styles = StyleSheet.create({
     borderBottomColor: '#F4B206',
   },
   fotosFeed:{
-    width: '95%',
+    width: '100%',
     height: '200px',
     margin: 10, 
     paddingLeft: 20,
     paddingRight: 20,
     resizeMode: 'contain',
+  },
+  fotoIcones:{
+    flexDirection: 'row',
+    padding: 10,
+    position: 'relative',
+  },
+  stories:{
+    flexDirection: 'row',
+    padding: 2,
   }
 })
 
