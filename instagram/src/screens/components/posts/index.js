@@ -11,7 +11,7 @@ const PostItem = ({ user, userImage, postImage, description }) => (
     </View>
     <Image
       style={{ width: '100%', height: 300 }}
-      source={require('../../assets/post-1.jpg')}
+      source={require('../../../assets/post-1.jpg')}
     />
     <View className="p-3">
       <View className="flex flex-row justify-start gap-3 mb-2">

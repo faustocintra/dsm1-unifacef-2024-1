@@ -4,7 +4,7 @@ import { Image, KeyboardAvoidingView, Platform, Pressable, SafeAreaView, Text, T
 import { StatusBar } from "expo-status-bar";
 import { AntDesign } from '@expo/vector-icons';
 
-import Button from "../../components/button";
+import Button from "../../../components/button";
 
 export default function Login({ navigation }) {
   const [text, onChangeText] = useState(null);
