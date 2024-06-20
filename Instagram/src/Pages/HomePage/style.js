@@ -5,6 +5,10 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 40,
   },
+  story: {
+    padding: 8,
+  },
+ 
 });
 
 export default styles;
