@@ -33,14 +33,12 @@ export default function Homepage({navigation}) {
             <View style={{flexDirection: 'column'}}> 
             <View>
                     <Image style={styles.fotosFeed} source={ 'https://st2.depositphotos.com/2931363/6569/i/450/depositphotos_65699901-stock-photo-black-man-keeping-arms-crossed.jpg' } />
-                    {/*Icones do meio*/}  
                     <View style={{flexDirection: 'row'}}>
                         <FontAwesome5 style={{ marginLeft: 5, marginRight: 5}} name="heart" size={32} color="black" />
                         <Feather style={{ marginLeft: 5, marginRight: 5}} name="message-circle" size={32} color="black" />
                         <FontAwesome5 style={{ marginLeft: 5, marginRight: 5}} name="paper-plane" size={30} color="black" />
-                        <Feather style={{ position: 'absolute', right: 0, alignSelf: 'center' , marginRight:10 }} name="bookmark" size={32} color="black" />
-                    </View>
-                    {/*Comentários*/}  
+                        <Feather style={{ position: 'absolute', right: 1, alignSelf: 'center' , marginRight:10 }} name="bookmark" size={32} color="black" />
+                    </View> 
                     <View>
                         <Text style={{ marginLeft: 5, position: 'relative' }}>
                             Curtido por 15 pessoas

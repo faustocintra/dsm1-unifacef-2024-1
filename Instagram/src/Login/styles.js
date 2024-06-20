@@ -7,6 +7,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  uppart:{
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '100%',
+    height: '100%',
+  },
   texto:{
     padding:10
   },
@@ -33,6 +39,21 @@ const styles = StyleSheet.create({
   },
   icon:{
     color:"black"
+  },
+  bottom:{
+    paddingTop: 50,
+  },
+  bottomSection:{
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  bottomText:{
+    padding:10,
+    marginBottom: 50,
+  },
+  botaoCriar:{
+    color: 'blue',
+    backgroundColor: 'white',
   }
 })
 
