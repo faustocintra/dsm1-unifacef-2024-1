@@ -1,13 +1,4 @@
-import {
-  StyleSheet,
-  TextInput,
-  View,
-  StatusBar,
-  Image,
-  Text,
-  TouchableOpacity,
-  Pressable,
-} from "react-native"
+import { StyleSheet, TextInput, View, StatusBar, Image, Text, TouchableOpacity, Pressable } from "react-native"
 import { FontAwesome6 } from "@expo/vector-icons"
 import { styles } from "./style"
 
@@ -16,23 +7,12 @@ export default function Login({ navigation }) {
     <View style={styles.container}>
       <StatusBar backgroundColor={"FFF"} translucent={false} />
       <Text style={styles.language}>Português(Brasil)</Text>
-      <Image
-        source={require("../../assets/logos/logo-instagram.png")}
-        style={styles.logo}
-      />
-      <TextInput
-        placeholder="Celular, nome de usuário ou email"
-        style={styles.input}
-      />
+      <Image source={require("../../assets/logos/logo-instagram.png")} style={styles.logo} />
+      <TextInput placeholder="Celular, nome de usuário ou email" style={styles.input} />
       <TextInput placeholder="Senha" style={styles.input} />
 
-      <Pressable
-        style={styles.buttonEntrar}
-        onPress={() => navigation.navigate("Tela Inicial")}
-      >
-        <Text style={{ color: "#fff", textAlign: "center", fontWeight: 600 }}>
-          Entrar
-        </Text>
+      <Pressable style={styles.buttonEntrar} onPress={() => navigation.navigate("Tela Inicial")}>
+        <Text style={{ color: "#fff", textAlign: "center", fontWeight: 600 }}>Entrar</Text>
       </Pressable>
       <View>
         <TouchableOpacity>
@@ -49,17 +29,11 @@ export default function Login({ navigation }) {
       </View>
       <View style={styles.footer}>
         <Pressable style={styles.buttonCadastrar}>
-          <Text
-            style={{ color: "#1E90FF", textAlign: "center", fontWeight: 600 }}
-          >
-            Criar nova conta
-          </Text>
+          <Text style={{ color: "#1E90FF", textAlign: "center", fontWeight: 600 }}>Criar nova conta</Text>
         </Pressable>
         <View style={styles.meta}>
-          <FontAwesome6 name="meta" size={14} color="grey" />
-          <Text style={{ color: "grey", fontWeight: 600, marginLeft: 5 }}>
-            Meta
-          </Text>
+          {/* <FontAwesome6 name="meta" size={14} color="grey" /> */}
+          <Text style={{ color: "grey", fontWeight: 600, marginLeft: 5 }}>César Daniel dos Santos Rodrigues</Text>
         </View>
       </View>
     </View>
