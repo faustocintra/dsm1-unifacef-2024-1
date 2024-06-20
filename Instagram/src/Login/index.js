@@ -19,7 +19,7 @@ const LoginScreen = ({ navigation }) => {
       <TouchableOpacity style={styles.signupButton} onPress={() => navigation.navigate("Signup")}>
         <Text style={styles.signupButtonText}>Criar nova conta</Text>
       </TouchableOpacity>
-      <Image source={require("../../assets/Meta-logo-grayscale.png")} style={styles.metaLogo} />
+      <Text>Leonardo Abib de Andrade - 25194</Text>
     </View>
   );
 }
