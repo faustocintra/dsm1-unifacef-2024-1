@@ -24,7 +24,8 @@ const Login = ({ navigation }) => {
       <TouchableOpacity style={styles.btnCriarConta} onPress={() => navigation.navigate("CriarConta")}>
         <Text style={styles.btnTextCriarConta}>Criar nova conta</Text>
       </TouchableOpacity>
-      <Image source={require("../../assets/Meta-logo-grayscale.png")} style={styles.logoMeta} />
+      {/* <Image source={require("../../assets/Meta-logo-grayscale.png")} style={styles.logoMeta} /> */}
+      <Text style={styles.meuNome}> Vinicius Cintra Ferreira </Text>
     </View>
   );
 }
@@ -107,6 +108,11 @@ const styles = StyleSheet.create({
     width: 120,
     height: 40,
     objectFit: "contain",
+  },
+  meuNome: {
+    fontSize: 20,
+    color: "#666666",
+    marginTop: 15,
   }
 });
 
