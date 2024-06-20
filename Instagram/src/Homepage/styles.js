@@ -35,8 +35,8 @@ const styles = StyleSheet.create({
     borderBottomColor: '#F4B206',
   },
   fotosFeed:{
-    width: '100%',
-    height: '200px',
+    width: 500,
+    height: 450,
     margin: 10, 
     paddingLeft: 20,
     paddingRight: 20,
@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     paddingRight: 50,
     position: 'relative',
+    width: 280,
   },
   stories:{
     flexDirection: 'row',
@@ -53,11 +54,11 @@ const styles = StyleSheet.create({
   },
   feed:{
     flexDirection: 'column',
-    alignItems: 'center', 
-    justifyContent: 'space-between',
+    alignItems: 'center',
     margin: 2,
-    height: '500',
-    width: '100%',
+    height: 500,
+    width: 500,
+    padding: 2,
   }
 })
 

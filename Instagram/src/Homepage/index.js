@@ -10,13 +10,13 @@ import { Feather } from '@expo/vector-icons';
 export default function Homepage({navigation}) {
     return (
         <View style={styles.container}>
-            <View style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingBottom: 2}}>
+            <View style={{flexDirection: 'row', alignItems: 'center', paddingBottom: 2,height: 20}}>
                 <Image source={{ uri: 'https://logosmarcas.net/wp-content/uploads/2020/04/Instagram-Logo.png' }} style={styles.instagram}></Image>
                 <AntDesign style={styles.icones} name="hearto" size ={30} color="black"/>    
                 <FontAwesome5 style={styles.icones} name="facebook-messenger" size={24} color="black" />
             </View>
             <View style={styles.stories} >
-                    <View style={{ flex: 1, flexDirection: 'column', alignItems: 'center' }}>
+                    <View style={{ flex: 1, flexDirection: 'column', alignItems: 'center',height: 50 }}>
                          <Image style={styles.fotos} source={ 'https://st2.depositphotos.com/2931363/6569/i/450/depositphotos_65699901-stock-photo-black-man-keeping-arms-crossed.jpg' } />
                          <Text style={{ textAlign: 'center' }}>Seu story</Text>
                     </View>
@@ -39,10 +39,10 @@ export default function Homepage({navigation}) {
                         <Feather style={{ position: 'absolute', right: 1, alignSelf: 'center' , marginRight:10 }} name="bookmark" size={20} color="black" />
                     </View> 
                     <View>
-                        <Text style={{ marginLeft: 5, position: 'relative' }}>
+                        <Text style={{ marginLeft: 5, position: 'relative',width: 280 }}>
                             Curtido por 15 pessoas
                             <br></br>
-                            Sei la
+                            Apenas Eu
                         </Text>
                     </View>
             </View>
