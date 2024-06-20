@@ -5,7 +5,6 @@ import { Text, View, StyleSheet, Image } from "react-native";
 const HomePage = ({ }) => {
   return (
     <View style={styles.container}>
-      {/* Cabeçalho / Notificações / Direct Messenger */}
       <View style={styles.header}>
         <Text>Instagram</Text>
         <View style={styles.headerNav}>
@@ -14,7 +13,6 @@ const HomePage = ({ }) => {
         </View>
       </View>
 
-      {/* Story User */}
       <View style={styles.containerStories}>
         <View style={styles.containerStory}>
           <View style={styles.containerStoryAdd}>
@@ -24,7 +22,6 @@ const HomePage = ({ }) => {
           <Text>Seu story</Text>
         </View>
 
-        {/* Stories geral*/}
         <View style={styles.containerStory}>
           <LinearGradient
             colors={["#F58529", "#DD2A7B", "#8134AF"]}
@@ -57,10 +54,8 @@ const HomePage = ({ }) => {
         </View>
       </View>
 
-      {/* Feed */}
       <View>
 
-        {/* Cabeçalho do Feed */}
         <View style={styles.containerFeedHeader}>
           <View style={styles.userContainer}>
             <Image source={require("../../assets/CR7.jpg")} style={styles.userFeed} />
@@ -69,10 +64,8 @@ const HomePage = ({ }) => {
           <Image source={require("../../assets/pontos.png")} style={styles.more} />
         </View>
 
-        {/* Imagem do Feed */}
         <Image source={require("../../assets/CR7.jpg")} style={styles.feed} />
 
-        {/* Rodapé do Feed */}
         <View style={styles.containerFeedFooter}>
           <View style={styles.FooterAction}>
             <Image source={require("../../assets/like.png")} style={styles.iconMenu} />
@@ -84,7 +77,6 @@ const HomePage = ({ }) => {
           </View>
         </View>
 
-        {/* Informações do Post */}
         <View style={styles.PostInfo}>
           <Text style={styles.PostText}>
             Curtido por <Text style={[styles.userName, styles.PostText]}>Papai_Cris07 </Text>
@@ -115,8 +107,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     gap: 12,
   },
-  // Cabeçalho / Notificações / Direct Messenger
-  header: {
+
+header: {
     flex: 1,
     flexDirection: "row",
     maxHeight: 56,
@@ -141,7 +133,7 @@ const styles = StyleSheet.create({
     width: 24,
     height: 24,
   },
-  // Stories
+  
   containerStories: {
     height: 102,
     flexDirection: "row",
@@ -190,7 +182,7 @@ const styles = StyleSheet.create({
     width: 18,
     height: 18,
   },
-  // Feed
+  
   containerFeedHeader: {
     flexDirection: "row",
     alignItems: "center",
@@ -243,7 +235,7 @@ const styles = StyleSheet.create({
   PostText: {
     fontSize: 16,
   },
-  // Action Bar
+  
   containerActionBar: {
     flexDirection: "row",
     justifyContent: "space-between",
