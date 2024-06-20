@@ -43,7 +43,7 @@ const HomePage = ({ }) => {
             style={styles.gradient}
           />
           <Image source={require("../../assets/th.png")} style={styles.story} />
-          <Text>Marcela</Text>
+          <Text> Marcela </Text>
         </View>
         <View style={styles.containerStory}>
           <LinearGradient
