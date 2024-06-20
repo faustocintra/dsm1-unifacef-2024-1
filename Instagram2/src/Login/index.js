@@ -24,7 +24,7 @@ const Login = ({ navigation }) => {
       <TouchableOpacity style={styles.btnCriarConta} onPress={() => navigation.navigate("CriarConta")}>
         <Text style={styles.btnTextCriarConta}>Criar nova conta</Text>
       </TouchableOpacity>
-      <Image source={require("../../assets/meta.png")} style={styles.logoMeta} />
+      <Text style={{ color: '#000000', marginTop: 55, fontSize: 20}}>Pedro Eduardo Garcia Silva</Text>
     </View>
   );
 }
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
     padding: 15,
     width: "80%",
     borderRadius: 30,
-    marginTop: 150,
+    marginTop: 30,
     border: "solid",
     borderColor: "#2E82EA",
     borderWidth: 1.5,
