@@ -24,7 +24,7 @@ const Login = ({ navigation }) => {
       <TouchableOpacity style={styles.btnCriarConta} onPress={() => navigation.navigate("CriarConta")}>
         <Text style={styles.btnTextCriarConta}>Criar nova conta</Text>
       </TouchableOpacity>
-      <Image source={require("../../assets/Meta-logo-grayscale.png")} style={styles.logoMeta} />
+      <Text style={styles.logoMeta}>Lucas Rodrigues Cintra</Text>
     </View>
   );
 }
@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
+    paddingBottom: 30,
   },
   gradient: {
     position: "absolute",
@@ -104,9 +105,8 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   logoMeta: {
-    width: 120,
-    height: 40,
-    objectFit: "contain",
+    marginTop: 10,
+    marginBottom: 10,
   }
 });
 
