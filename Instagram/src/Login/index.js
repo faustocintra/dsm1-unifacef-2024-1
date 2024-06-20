@@ -31,7 +31,8 @@ export default function Login({ navigation }) {
         <Pressable style={styles.createAccount}>
         <Text style={styles.buttonTextCreate}>Criar nova conta</Text>
       </Pressable>
-      <Image source={require('./assets/meta-logo.png')} style={styles.metaLogo} />
+
+      <Text style={styles.metaLogo}>Ana Carolina Neias Ribeiro Vieira</Text>
       
       
       

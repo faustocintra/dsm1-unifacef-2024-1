@@ -109,7 +109,7 @@ export default function Homepage() {
             />
           </View>
         </LinearGradient>
-        <Text style={styles.storyText}>panificadorapires</Text>
+        <Text style={styles.storyText}>paonosso</Text>
         </View>
 
       </ScrollView>

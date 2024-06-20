@@ -29,7 +29,6 @@ const styles = StyleSheet.create({
   storyCirculo: {
     flex:1,
     alignItems: 'center',
-    marginHorizontal: 5,
     justifyContent: 'center',
   },
   storyImage: {

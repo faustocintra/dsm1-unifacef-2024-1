@@ -69,9 +69,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   metaLogo: {
-    width: 70,
+    marginTop: 70,
+    alignItems: 'center',
+    width: '90%',
     height: 70,
-    resizeMode: 'contain',
+    marginLeft: 100
   }
 });
 
