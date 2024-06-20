@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     borderBottomColor: '#F4B206',
   },
   fotosFeed:{
-    width: 500,
+    width: 550,
     height: 450,
     margin: 10, 
     paddingLeft: 20,
