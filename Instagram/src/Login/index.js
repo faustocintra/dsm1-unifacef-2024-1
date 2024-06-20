@@ -55,10 +55,17 @@ const Login = () => {
           <Text style={styles.newAcc}>Criar nova conta</Text>
   
         </TouchableOpacity>
-        <Image
+        {/* <Image
             source={require('../assets/logo-meta.png')}
             style={styles.logo}
-          />
+          /> */}
+
+            
+        <View style={styles.forgotContainer}>
+          <TouchableOpacity>
+            <Text style={styles.forgotText}>Brenda Paulino de Araujo</Text>
+          </TouchableOpacity>
+        </View>
   
       </View>
       </LinearGradient>
