@@ -50,7 +50,7 @@ export default function Homepage({ navigation }) {
         </View>
 
         <View style={styles.footer}>
-          <Image source={foto2} style={styles.footerImage} />
+            <Text style={styles.forgotPassword}>ROBERTO L. C. PAPACIDERO</Text>
         </View>
       </View>
     </LinearGradient>
