@@ -3,9 +3,15 @@ import { View, Text, TextInput, TouchableOpacity, Image } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import styles from "./style";
 
-const Login = () => {
+const Login = ({ navigation }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
+  const handleLogin = () => {
+    // Aqui você pode adicionar a lógica de autenticação
+    // Se a autenticação for bem-sucedida, navegue para a tela Home
+    navigation.navigate("Home");
+  };
 
   return (
     <LinearGradient
@@ -27,7 +33,7 @@ const Login = () => {
       <View style={styles.inputContainer}>
         <TextInput
           style={styles.input}
-          placeholder="Nome de usuário, email ou numero"
+          placeholder="Nome de usuário, email ou número"
           value={username}
           onChangeText={setUsername}
         />
@@ -38,12 +44,12 @@ const Login = () => {
           value={password}
           onChangeText={setPassword}
         />
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={handleLogin}>
           <Text style={styles.buttonText}>Login</Text>
         </TouchableOpacity>
         <Text style={styles.text}>Esqueceu a senha?</Text>
         <TouchableOpacity style={styles.outlined}>
-            <Text style={styles.textOutilined}>Criar nova conta</Text>
+          <Text style={styles.textOutilined}>Criar nova conta</Text>
         </TouchableOpacity>
       </View>
       <View style={styles.iconContainer}>

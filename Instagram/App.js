@@ -9,9 +9,9 @@ const Nav = createStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
-      <Nav.Navigator>
+      <Nav.Navigator screenOptions={{ headerShown: false }}>
         <Nav.Screen name="Home" component={Home} />
-        <Nav.Screen name="Login" component={Login} options={{ title: '' }} />
+        <Nav.Screen name="Login" component={Login} />
       </Nav.Navigator>
     </NavigationContainer>
   );
