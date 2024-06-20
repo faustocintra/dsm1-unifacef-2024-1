@@ -25,7 +25,7 @@ const Login = ({ navigation }) => {
       <Pressable style={styles.btnCriarConta}>
         <Text style={styles.btnTextCriarConta}>Criar nova conta</Text>
       </Pressable>
-      <Image source={require("../../assets/Meta-logo-grayscale.png")} resizeMode="contain" style={styles.logoMeta} />
+      <Text style={styles.logoMeta}> Kauan Eduardo Rodrigues do Carmo </Text>
     </View>
   );
 }

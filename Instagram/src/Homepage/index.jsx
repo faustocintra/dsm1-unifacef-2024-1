@@ -135,7 +135,7 @@ const Homepage = ({}) => {
             </Text>
             <Text>
               {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+              Me sentindo molhado.{" "}
             </Text>
           </Text>
         </View>
