@@ -30,8 +30,7 @@ export default function Homepage({navigation}) {
                     </View>     
             </View>   
 
-            <View style={{flexDirection: 'column', alignItems: 'center', justifyContent: 'space-between'}}> 
-            <View>
+            <View style={styles.feed}> 
                     <Image style={styles.fotosFeed} source={ 'https://media.istockphoto.com/id/523150985/photo/full-body-portrait-of-a-handsome-young-man-smiling.jpg?s=612x612&w=0&k=20&c=dWBzZLrPBOkzk3LG7CKMUPCMe40cWclIidOvNg2_mVw=' } />
                     <View style={styles.fotoIcones}>
                         <FontAwesome5 style={{ marginLeft: 5, marginRight: 5}} name="heart" size={20} color="black" />
@@ -46,7 +45,6 @@ export default function Homepage({navigation}) {
                             Sei la
                         </Text>
                     </View>
-                </View>
             </View>
         </View>
     );

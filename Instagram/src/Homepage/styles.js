@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'lightgray',
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 2,
   },
   instagram: {
     position: 'top-left',
@@ -43,12 +44,20 @@ const styles = StyleSheet.create({
   },
   fotoIcones:{
     flexDirection: 'row',
-    padding: 10,
+    paddingRight: 50,
     position: 'relative',
   },
   stories:{
     flexDirection: 'row',
     padding: 2,
+  },
+  feed:{
+    flexDirection: 'column',
+    alignItems: 'center', 
+    justifyContent: 'space-between',
+    margin: 2,
+    height: '500',
+    width: '100%',
   }
 })
 

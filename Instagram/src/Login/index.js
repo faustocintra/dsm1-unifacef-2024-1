@@ -22,7 +22,7 @@ export default function Login({navigation}) {
   
                 <View styles={styles.bottom}>
                     <View style={styles.bottomSection}>
-                    <Pressable style={styles.botaoCriar}>Criar uma nova conta</Pressable>
+                    <Button title="Criar uma nova conta" style={styles.botaoCriar}>Criar uma nova conta</Button>
                     <Text style={styles.bottomText}>Thiago Correia Azarias</Text>
                     </View>
                 </View>
