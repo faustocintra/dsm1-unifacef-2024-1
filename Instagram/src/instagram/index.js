@@ -27,7 +27,7 @@ const Instagram = () => {
         <View style={styles.formContainer}>
           <TextInput
             style={styles.input}
-            placeholder="Nome de usuário, email ou número de telefone"
+            placeholder="E-mail ou número de telefone"
           />
           <TextInput
             style={styles.input}
@@ -45,6 +45,7 @@ const Instagram = () => {
             <Text style={styles.createAccountButtonText}>Criar nova conta</Text>
           </TouchableOpacity>
         </View>
+        <text style={styles.footerText}>Mariana Evangelista Reis Alves</text>
       </View>
     </LinearGradient>
   )
